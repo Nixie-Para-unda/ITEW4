@@ -1,0 +1,100 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px;
+    background: white;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+    background: lightgray; /* Placeholder for logo */
+}
+
+.contact-info {
+    margin-left: 600px;
+    display: flex;
+    float: right;
+    text-align: right;
+    font-size: 14px;
+    gap: 20px;
+}
+
+.contact-info p {
+    font-size: 16px;
+
+    margin: 0;
+}
+
+nav {
+    font-size: 20px;
+    background: green;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline;
+    margin: 0 75px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 190%;
+    left: 0; 
+    background: gray;
+    max-width: max-content;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background: lightgray;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.donate-btn {
+    font-size: 16px;
+    background: white;
+    color: black;
+    padding: 15px 40px;
+    text-align: center;
+    border: 2px solid green;
+    border-radius: 5px;
+}
