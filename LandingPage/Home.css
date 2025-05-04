@@ -18,10 +18,10 @@ header .logo img {
 }
 
 .login-button {
-    padding: 0.6rem 1.9rem;
-    background-color: #33cc33;
+    padding: 0.6rem 2.1rem;
+    background-color: #ffcc00;
     border: none;
-    color: #fff;
+    color: #312c2c;
     font-weight: 600;
     border-radius: 30px;
     font-size: 1rem;
@@ -30,7 +30,7 @@ header .logo img {
 }
 
 .login-button:hover {
-    background-color: #28a745;
+    background-color: #ffcc00;
 }
 
 .login-button:focus {
@@ -194,7 +194,7 @@ header .logo img {
 
 
 /* 3 Images */
-    .object-fit-cover {
+.object-fit-cover {
     object-fit: cover;
     height: 100%;
 }
@@ -305,6 +305,80 @@ header .logo img {
     margin: 0 auto;
 }
 
+/* Upcoming Events */
+section#upcoming-events {
+    padding: 60px 0;
+    margin-top: 50px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #0f2c2c;
+}
+
+.underline-events {
+    width: 60px;
+    height: 3px;
+    background-color: green;
+    margin: 10px auto 40px;
+}
+
+.event-card {
+    background-color: white;
+    padding: 30px 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 100%;
+    min-height: 450px;
+}
+
+.event-card.active {
+    background-color: #008000;
+    color: white;
+}
+
+.event-card.active p,
+.event-card.active h5 {
+    color: white;
+}
+
+.event-card img {
+    width: 140px;
+    height: 140px;
+    background: #ccc;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.event-date {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.event-title {
+    font-weight: 600;
+}
+
+.event-description {
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer a:hover {
+    text-decoration: underline;
+    color: #ffe599 !important;
+  }
+
+  .btn-floating {
+    border-radius: 50%;
+    font-size: 1.2rem;
+  }
+
 /* Responsive Adjustments */
 @media (max-width: 992px) {
     .nav-menu {
@@ -400,5 +474,9 @@ header .logo img {
     
     header .logo img {
         max-width: 120px;
+    }
+
+    .event-card {
+        min-height: 250px;
     }
 }
