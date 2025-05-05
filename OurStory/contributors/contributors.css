@@ -1,0 +1,217 @@
+/* Base Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+  }
+  
+  body {
+    font-family: 'Roboto', Arial, sans-serif;
+    min-height: 100vh;
+    color: #111;
+  }
+  
+  /* Header */
+  .header {
+    background-color: white;
+  }
+  
+  /* Navigation */
+  .nav-menu {
+    background-color: #008800;
+  }
+  
+  .navbar-nav .nav-link {
+    color: white !important;
+    padding: 0.75rem 1rem;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  /* Login Button */
+  .login-button {
+    padding: 0.6rem 1.9rem;
+    background-color: #33cc33;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #28a745;
+  }
+  
+  /* Dropdown Menu */
+  .dropdown-menu {
+    background-color: #007700 !important;
+    border: none;
+    border-radius: 0 0 8px 8px;
+    padding: 0.5rem 0;
+  }
+  
+  .dropdown-item {
+    color: white !important;
+    background-color: transparent !important;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    border-left: 3px solid transparent;
+  }
+  
+  .dropdown-item:hover,
+  .dropdown-item:focus {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    border-left: 3px solid rgba(255, 255, 255, 0.7) !important;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #0e7c1f;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .hero-text {
+    max-width: 600px;
+    margin-left: 30px;
+  }
+  
+  .hero-text h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  .hero-text p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  
+  .hero-button .btn {
+    border: 2px solid white;
+    padding: 10px 50px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+    margin-right: 50px;
+  }
+  
+  .hero-button .btn:hover {
+    background-color: white;
+    color: #0e7c1f;
+  }
+  
+  /* Stats Section */
+  .stats-section {
+    padding: 40px 20px;
+    margin-top: 30px;
+    background-color: #E6E9E8;
+
+  }
+  
+  .stats-section h2 {
+    font-size: 1.6em;
+    margin-bottom: 30px;
+    margin-left: 120px;
+  }
+  
+  .stat-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #ccc !important;
+    width: 82%;
+    padding: 50px 0;
+    margin-left: 9%;
+    background-color: #E6E9E8;
+  }
+  
+  .stat-card:last-child {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .stat-info h3 {
+    font-size: 25px;
+    margin-bottom: 8px;
+  }
+  
+  .stat-info p {
+    color: #888;
+    font-size: 0.95em;
+    max-width: 600px;
+  }
+  
+  .stat-number {
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 150px;
+  }
+  
+  .line-gap {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  /* Typography Consistency */
+  p, h1, h2, h3, h4, h5, h6, a, span, div {
+    font-family: 'Roboto', Arial, sans-serif;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 992px) {
+    .stats-section h2 {
+      margin-left: 60px;
+    }
+  
+    .stat-card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .stat-number {
+      margin-top: 20px;
+      margin-right: 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-text h1 {
+      font-size: 1.5em;
+    }
+  
+    .hero-button .btn {
+      margin-top: 20px;
+    }
+  
+    .stat-number {
+      font-size: 30px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .stat-card {
+      width: 100%;
+      margin-left: 0;
+      padding: 30px 20px;
+    }
+  
+    .stats-section h2 {
+      margin-left: 20px;
+    }
+  
+    .stat-number {
+      font-size: 24px;
+      margin-right: 0;
+    }
+  }
+  
