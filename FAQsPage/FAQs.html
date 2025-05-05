@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FAQs</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="FAQs.css">
+    </head>
+
+    <body>
+
+        <!-- Header -->
+        <header class="header py-4">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+
+                    <!-- Logo -->
+                    <div class="col-md-3">
+                        <div class="logo">
+                            <img src="" alt="Company Logo" class="img-fluid">
+                        </div>
+                    </div>
+
+                    <!-- Login Button -->
+                    <div class="col-md-3 text-end">
+                        <a href="../LoginPage/Login.html">
+                            <button class="login-button">Login</button>
+                          </a>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg nav-menu">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav w-100 justify-content-between">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../LandingPage/Home.html">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                                Our Story
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Volunteer</a></li>
+                                <li><a class="dropdown-item" href="#">Awards and Recognition</a></li>
+                                <li><a class="dropdown-item" href="#">Partnerships</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Events</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                                Get Involved
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Volunteer</a></li>
+                                <li><a class="dropdown-item" href="#">Donate</a></li>
+                                <li><a class="dropdown-item" href="#">Partnerships</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../BookAVisit/Book.html">Book a Visit</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../FAQsPage/FAQs.html">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero-section text-center" >
+            <div class="container">
+                <h1 class="page-title">Frequently Asked Questions</h1>
+                <p class="lead">Find answers to the most common questions about our adoption process</p>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="search-container">
+                            <h2 class="text-center mb-4">How can we help you?</h2>
+                            <div class="input-group">
+                                <input type="text" class="form-control search-input" id="faqSearch" placeholder="Search for questions...">
+                                <button class="btn search-btn" type="button">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="category-pills d-flex flex-wrap">
+                            <button class="category-pill active" data-category="all">All</button>
+                            <button class="category-pill" data-category="adoption">Adoption Process</button>
+                            <button class="category-pill" data-category="requirements">Requirements</button>
+                            <button class="category-pill" data-category="fees">Fees & Costs</button>
+                            <button class="category-pill" data-category="care">Pet Care</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="faq-category" data-category="adoption">
+                            <h3 class="mb-4">Adoption Process</h3>
+                            
+                            <div class="faq-card">
+                                <div class="faq-header d-flex justify-content-between align-items-center" data-target="#faq1">
+                                    <h2>How does the adoption process work?</h2>
+                                    <i class="fas fa-chevron-down faq-icon"></i>
+                                </div>
+                                <div class="faq-body" id="faq1">
+                                    <div class="faq-content">
+                                        <p>Our adoption process typically follows these steps:</p>
+                                        <ol>
+                                            <li>Browse available pets on our website or visit our shelter</li>
+                                            <li>Complete an adoption application</li>
+                                            <li>Meet with an adoption counselor for an interview</li>
+                                            <li>Meet your potential pet (we encourage multiple visits)</li>
+                                            <li>Home visit (for certain animals)</li>
+                                            <li>Approval and adoption fee payment</li>
+                                            <li>Take your new family member home!</li>
+                                        </ol>
+                                        <p>The entire process usually takes 1-7 days, depending on the specific circumstances and animal.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-card">
+                                <div class="faq-header d-flex justify-content-between align-items-center" data-target="#faq2">
+                                    <h2>Can I place a hold on an animal I'm interested in?</h2>
+                                    <i class="fas fa-chevron-down faq-icon"></i>
+                                </div>
+                                <div class="faq-body" id="faq2">
+                                    <div class="faq-content">
+                                        <p>Yes, we offer a 24-hour hold on animals for potential adopters. A small deposit (₱500) is required, which will be applied to your adoption fee if you proceed with adoption. If you decide not to adopt, the deposit becomes a donation to help our shelter animals.</p>
+                                        <p>Please note that holds are available on a first-come, first-served basis, and we can only accommodate holds for people who have completed an application and initial screening.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-card">
+                                <div class="faq-header d-flex justify-content-between align-items-center" data-target="#faq3">
+                                    <h2>How long does the adoption process take?</h2>
+                                    <i class="fas fa-chevron-down faq-icon"></i>
+                                </div>
+                                <div class="faq-body" id="faq3">
+                                    <div class="faq-content">
+                                        <p>From application to taking your pet home, the process typically takes 1-7 days. Some adoptions can be completed same-day if all requirements are met and the match is clearly appropriate. More complex situations—such as first-time pet owners, certain breeds with special needs, or homes with multiple existing pets—may require additional time for counseling and preparation.</p>
+                                        <p>Our goal is to ensure successful, lasting matches rather than rushing the process.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-category" data-category="requirements">
+                            <h3 class="mb-4 mt-5">Requirements</h3>
+                            
+                            <div class="faq-card">
+                                <div class="faq-header d-flex justify-content-between align-items-center" data-target="#faq4">
+                                    <h2>What are the requirements to adopt a pet?</h2>
+                                    <i class="fas fa-chevron-down faq-icon"></i>
+                                </div>
+                                <div class="faq-body" id="faq4">
+                                    <div class="faq-content">
+                                        <p>Our basic adoption requirements include:</p>
+                                        <ul>
+                                            <li>Must be at least 21 years of age</li>
+                                            <li>Valid government-issued ID</li>
+                                            <li>Proof of residence (utility bill, lease agreement, etc.)</li>
+                                            <li>If renting, landlord verification of pet policy</li>
+                                            <li>All household members must meet the pet before adoption</li>
+                                            <li>Current pets must be up-to-date on vaccinations</li>
+                                        </ul>
+                                        <p>Additional requirements may apply for specific animals or breeds.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-card">
+                                <div class="faq-header d-flex justify-content-between align-items-center" data-target="#faq5">
+                                    <h2>Can I adopt if I live in an apartment?</h2>
+                                    <i class="fas fa-chevron-down faq-icon"></i>
+                                </div>
+                                <div class="faq-body" id="faq5">
+                                    <div class="faq-content">
+                                        <p>Absolutely! Many of our animals thrive in apartment settings. However, we do consider the animal's specific needs, energy level, and size when determining if they're a good match for apartment living.</p>
+                                        <p>If you rent, you'll need to provide proof that pets are allowed in your building and any pet deposits have been arranged. We may also consider factors like access to outdoor spaces, exercise opportunities, and your lifestyle to ensure a suitable match.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-card">
+                                <div class="faq-header d-flex justify-content-between align-items-center" data-target="#faq6">
+                                    <h2>Do you allow out-of-state adoptions?</h2>
+                                    <i class="fas fa-chevron-down faq-icon"></i>
+                                </div>
+                                <div class="faq-body" id="faq6">
+                                    <div class="faq-content">
+                                        <p>We generally focus on local adoptions to ensure we can conduct proper home visits and follow-ups. However, we do consider out-of-state adoptions on a case-by-case basis, typically within a 100-mile radius of our shelter.</p>
+                                        <p>For out-of-state adoptions, we may partner with rescue organizations in your area to conduct home visits and may require additional references. Transportation of the animal would be your responsibility, and additional paperwork may be needed for interstate animal transport.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-category" data-category="fees">
+                            <h3 class="mb-4 mt-5">Fees & Costs</h3>
+                            
+                            <div class="faq-card">
+                                <div class="faq-header d-flex justify-content-between align-items-center" data-target="#faq7">
+                                    <h2>What are your adoption fees?</h2>
+                                    <i class="fas fa-chevron-down faq-icon"></i>
+                                </div>
+                                <div class="faq-body" id="faq7">
+                                    <div class="faq-content">
+                                        <p>Our adoption fees vary by animal type, age, and special needs:</p>
+                                        <ul>
+                                            <li><strong>Dogs:</strong> ₱500-₱1000 (puppies typically higher)</li>
+                                            <li><strong>Cats:</strong> ₱500-₱1000 (kittens typically higher)</li>
+                                            <li><strong>Small Animals:</strong> ₱500-₱750</li>
+                                        </ul>
+                                        <p>These fees help cover spay/neuter surgery, microchipping, vaccinations, deworming, and basic medical care while in our shelter. Senior animals and those with special needs often have reduced fees.</p>
+                                        <p>We occasionally run special promotions with reduced adoption fees for certain animals.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-card">
+                                <div class="faq-header d-flex justify-content-between align-items-center" data-target="#faq8">
+                                    <h2>What is included in the adoption fee?</h2>
+                                    <i class="fas fa-chevron-down faq-icon"></i>
+                                </div>
+                                <div class="faq-body" id="faq8">
+                                    <div class="faq-content">
+                                        <p>Our adoption fees include:</p>
+                                        <ul>
+                                            <li>Spay/neuter surgery</li>
+                                            <li>Microchip and registration</li>
+                                            <li>Age-appropriate vaccinations</li>
+                                            <li>Deworming treatment</li>
+                                            <li>Flea/tick treatment</li>
+                                            <li>Basic veterinary exam</li>
+                                            <li>30 days of pet health insurance</li>
+                                            <li>Starter bag of food</li>
+                                            <li>Post-adoption support and resources</li>
+                                        </ul>
+                                        <p>The actual value of these services if purchased separately would be significantly higher than our adoption fees.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-card">
+                                <div class="faq-header d-flex justify-content-between align-items-center" data-target="#faq9">
+                                    <h2>Do you offer any discounts on adoption fees?</h2>
+                                    <i class="fas fa-chevron-down faq-icon"></i>
+                                </div>
+                                <div class="faq-body" id="faq9">
+                                    <div class="faq-content">
+                                        <p>Yes, we offer several discount programs:</p>
+                                        <ul>
+                                            <li><strong>Senior Pets (7+ years):</strong> 50% off regular fees</li>
+                                            <li><strong>Senior Citizens (65+):</strong> 25% off adoption fees</li>
+                                            <li><strong>Military/Veterans:</strong> 25% off adoption fees</li>
+                                            <li><strong>"Buddy System" (adopting two bonded animals):</strong> 25% off total fee</li>
+                                            <li><strong>Long-term Residents (4+ months in shelter):</strong> Reduced fees</li>
+                                        </ul>
+                                        <p>We also run seasonal promotions throughout the year. Follow our social media for announcements!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-category" data-category="care">
+                            <h3 class="mb-4 mt-5">Pet Care</h3>
+                            
+                            <div class="faq-card">
+                                <div class="faq-header d-flex justify-content-between align-items-center" data-target="#faq10">
+                                    <h2>What support do you offer after adoption?</h2>
+                                    <i class="fas fa-chevron-down faq-icon"></i>
+                                </div>
+                                <div class="faq-body" id="faq10">
+                                    <div class="faq-content">
+                                        <p>We're committed to supporting you throughout your pet's life. Our post-adoption services include:</p>
+                                        <ul>
+                                            <li>30-day follow-up check-in</li>
+                                            <li>Behavior hotline for questions and concerns</li>
+                                            <li>Training resources and recommendations</li>
+                                            <li>Monthly new adopter support group meetings</li>
+                                            <li>Educational workshops and webinars</li>
+                                            <li>Referrals to pet-friendly resources</li>
+                                        </ul>
+                                        <p>If you encounter challenges with your adopted pet, please contact us before considering surrender. We can often provide resources to help resolve issues.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-card">
+                                <div class="faq-header d-flex justify-content-between align-items-center" data-target="#faq11">
+                                    <h2>What should I prepare before bringing my new pet home?</h2>
+                                    <i class="fas fa-chevron-down faq-icon"></i>
+                                </div>
+                                <div class="faq-body" id="faq11">
+                                    <div class="faq-content">
+                                        <p><strong>For Dogs:</strong></p>
+                                        <ul>
+                                            <li>Appropriately sized crate/bed</li>
+                                            <li>Food and water bowls</li>
+                                            <li>High-quality dog food (we'll tell you what they've been eating)</li>
+                                            <li>Collar, ID tag, and leash</li>
+                                            <li>Toys for mental stimulation</li>
+                                            <li>Pet-safe cleaning supplies</li>
+                                            <li>Baby gates if needed for space management</li>
+                                        </ul>
+                                        
+                                        <p><strong>For Cats:</strong></p>
+                                        <ul>
+                                            <li>Litter box and litter</li>
+                                            <li>Food and water dishes</li>
+                                            <li>High-quality cat food</li>
+                                            <li>Scratching post</li>
+                                            <li>Toys and enrichment items</li>
+                                            <li>Carrier for transport</li>
+                                            <li>Comfortable bed or resting space</li>
+                                        </ul>
+                                        
+                                        <p>We provide a detailed "Going Home" guide specific to your new pet during the adoption process.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-card">
+                                <div class="faq-header d-flex justify-content-between align-items-center" data-target="#faq12">
+                                    <h2>What if the adoption doesn't work out?</h2>
+                                    <i class="fas fa-chevron-down faq-icon"></i>
+                                </div>
+                                <div class="faq-body" id="faq12">
+                                    <div class="faq-content">
+                                        <p>While we strive to make perfect matches, we understand that sometimes unforeseen circumstances arise. Our return policy includes:</p>
+                                        <ul>
+                                            <li>14-day trial period with full refund of adoption fee</li>
+                                            <li>Lifetime return policy (we always accept our animals back)</li>
+                                            <li>Behavior consultation before returns to try addressing issues</li>
+                                            <li>Partial refund of adoption fee (on case-by-case basis) for returns after 14 days but within 30 days</li>
+                                        </ul>
+                                        <p>Please <strong>never</strong> rehome an adopted pet on your own. Contact us first, as we want to ensure the animal's continued wellbeing and have valuable information about their history and needs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-box text-center">
+                            <h3>Still have questions?</h3>
+                            <p class="mb-4">Our adoption specialists are ready to help you find your perfect companion</p>
+                            <button class="btn contact-btn">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <!-- About Us -->
+                    <div class="col-lg-4 col-md-6 footer-section">
+                        <h5>About Us</h5>
+                        <p>We're dedicated to finding loving forever homes for animals in need. Since 2010, we've helped over 5,000 pets find their families.</p>
+                        <div class="social-links mt-3">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Links -->
+                    <div class="col-lg-4 col-md-6 footer-section">
+                        <h5>Quick Links</h5>
+                        <div class="footer-links">
+                            <a href="#"><i class="fas fa-paw pet-icon"></i> Available Pets</a>
+                            <a href="#"><i class="fas fa-heart pet-icon"></i> Adoption Process</a>
+                            <a href="#"><i class="fas fa-hand-holding-heart pet-icon"></i> Donate</a>
+                            <a href="#"><i class="fas fa-user-friends pet-icon"></i> Volunteer</a>
+                            <a href="#"><i class="fas fa-question-circle pet-icon"></i> FAQ</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Newsletter -->
+                    <div class="col-lg-4 col-md-6 footer-section">
+                        <h5>Newsletter</h5>
+                        <p>Subscribe to get updates on new arrivals and adoption events.</p>
+                        <form class="subscribe-form d-flex mt-3">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Paw Print Divider -->
+                <div class="pet-paw-divider">
+                    <div class="paw-line"></div>
+                    <i class="fas fa-paw fa-2x paw-icon"></i>
+                    <div class="paw-line"></div>
+                </div>
+                
+                <!-- Support Section -->
+                <div class="row text-center">
+                    <div class="col-md-4 mb-3">
+                        <h6><i class="fas fa-heart me-2"></i> Emergency Support</h6>
+                        <p class="small">24/7 Animal Emergency: (123) 555-7890</p>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h6><i class="fas fa-hands-helping me-2"></i> Foster Program</h6>
+                        <p class="small">Open your home temporarily: tails@petadoption.org</p>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h6><i class="fas fa-truck me-2"></i> Transport Volunteers</h6>
+                        <p class="small">Help animals reach forever homes: transport@petadoption.org</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer-bottom text-center">
+                <div class="container">
+                    <p class="mb-0">© 2025 All rights reserved. | <a href="#" class="text-white">Privacy Policy</a> | <a href="#" class="text-white">Terms of Service</a></p>
+                </div>
+            </div>
+        </footer>
+
+        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

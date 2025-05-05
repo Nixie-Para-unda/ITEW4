@@ -83,3 +83,12 @@ window.addEventListener('resize', function() {
         });
     }
 });
+
+const cards = document.querySelectorAll('.event-card');
+cards.forEach(card => {
+  card.addEventListener('click', () => {
+    cards.forEach(c => c.classList.remove('active'));
+    card.classList.add('active');
+  });
+});
+
