@@ -1,0 +1,116 @@
+/* General Section Styling */
+.application-section {
+    background-color: #f9f9f9;
+  }
+  
+  .back-to-adopt-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #008800;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  }
+  
+  .back-to-adopt-btn:hover {
+    background-color: #006600;
+    text-decoration: none;
+  }
+
+  .application-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 136, 0, 0.1);
+    padding: 2rem;
+  }
+  
+  .application-header .application-icon {
+    font-size: 2rem;
+    color: #008800;
+    margin-bottom: 10px;
+  }
+  
+  h2,
+  h3.form-section-title {
+    color: #006600;
+  }
+  
+  .form-label {
+    font-weight: 500;
+    color: #006600;
+  }
+  
+  .btn-primary {
+    background-color: #007700;
+    border-color: #006600;
+  }
+  
+  .btn-primary:hover {
+    background-color: #006600;
+  }
+  
+  .btn-outline-secondary {
+    color: #007700;
+    border-color: #007700;
+  }
+  
+  .btn-outline-secondary:hover {
+    background-color: #007700;
+    color: white;
+  }
+  
+  .btn-success {
+    background-color: #008800;
+    border-color: #006600;
+  }
+  
+  .btn-success:hover {
+    background-color: #006600;
+  }
+  
+  .progress-step {
+    display: inline-block;
+    text-align: center;
+    margin-right: 20px;
+  }
+  
+  .progress-step .step-icon {
+    background-color: #ccc;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    color: white;
+    margin: 0 auto 5px;
+  }
+  
+  .progress-step.active .step-icon {
+    background-color: #008800;
+  }
+  
+  .progress-step .step-label {
+    font-size: 0.9rem;
+    color: #444;
+  }
+  
+  .review-section .card-header {
+    background-color: #e6ffe6;
+    color: #004400;
+  }
+  
+  .review-section .btn-link {
+    color: #007700;
+  }
+  
+  /* Modal Styling */
+  .thank-you-icon {
+    font-size: 3rem;
+    color: #008800;
+    margin-bottom: 1rem;
+  }
+  

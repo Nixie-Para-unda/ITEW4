@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TAILS - Adoption Application</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="../Adopt/adopt.css" rel="stylesheet">
+  <link href="form.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header py-4">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <!-- Logo -->
+        <div class="col-md-3">
+          <div class="logo">
+            <a href="../LandingPage/Home.html">
+              <img src="" alt="TAILS Logo" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <!-- Login Button -->
+        <div class="col-md-3 text-end">
+          <a href="../LoginPage/Login.html">
+            <button class="login-button">Login</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg nav-menu">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav w-100 justify-content-between">
+          
+          <!-- Home -->
+          <li class="nav-item">
+            <a class="nav-link" href="../LandingPage/Home.html">Home</a>
+          </li>
+
+          <!-- OurStory -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+              Our Story
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Our Mission</a></li>
+              <li><a class="dropdown-item" href="#">Awards and Recognition</a></li>
+              <li><a class="dropdown-item" href="#">Partnerships</a></li>
+            </ul>
+          </li>
+
+          <!-- Events -->
+          <li class="nav-item">
+            <a class="nav-link" href="../Events-Page/event.html">Events</a>
+          </li>
+
+          <!-- Get Involved -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+              Get Involved
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../Donate/donate.html">Donate</a></li>
+              <li><a class="dropdown-item" href="../Adopt/adopt.html">Adopt</a></li>
+            </ul>
+          </li>
+
+          <!-- Book a Visit -->
+          <li class="nav-item">
+            <a class="nav-link" href="../BookAVisit/Book.html">Book a Visit</a>
+          </li>
+
+          <!-- FAQs -->
+          <li class="nav-item">
+            <a class="nav-link" href="../FAQsPage/FAQs.html">FAQs</a>
+          </li>
+
+          <!-- Contact Us -->
+          <li class="nav-item">
+            <a class="nav-link" href="../contact-us/ContactUs.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Title -->
+  <section class="page-title">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1>Adoption Application</h1>
+          <a href="../Adopt/adopt.html" class="back-to-adopt-btn">← Back to Adopt</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Application Form Section -->
+  <section class="application-section py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="application-card">
+            <div class="application-header text-center mb-4">
+              <div class="application-icon">
+                <i class="fas fa-paw"></i>
+              </div>
+              <h2>Pet Adoption Application</h2>
+              <p class="text-muted">Please fill out the form below to begin your adoption journey!</p>
+            </div>
+            
+            <form id="adoptionForm" class="needs-validation" novalidate>
+              <!-- Form Progress -->
+              <div class="form-progress mb-5">
+                <div class="progress-step active" data-step="1">
+                  <div class="step-icon">1</div>
+                  <div class="step-label">Personal Info</div>
+                </div>
+                <div class="progress-step" data-step="2">
+                  <div class="step-icon">2</div>
+                  <div class="step-label">Living Situation</div>
+                </div>
+                <div class="progress-step" data-step="3">
+                  <div class="step-icon">3</div>
+                  <div class="step-label">Pet Preferences</div>
+                </div>
+                <div class="progress-step" data-step="4">
+                  <div class="step-icon">4</div>
+                  <div class="step-label">Review</div>
+                </div>
+              </div>
+              
+              <!-- Step 1: Personal Information -->
+              <div class="form-step" data-step="1">
+                <h3 class="form-section-title">Personal Information</h3>
+                
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="firstName" class="form-label">First Name*</label>
+                    <input type="text" class="form-control" id="firstName" required>
+                    <div class="invalid-feedback">
+                      Please provide your first name.
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <label for="lastName" class="form-label">Last Name*</label>
+                    <input type="text" class="form-control" id="lastName" required>
+                    <div class="invalid-feedback">
+                      Please provide your last name.
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">Email Address*</label>
+                    <input type="email" class="form-control" id="email" required>
+                    <div class="invalid-feedback">
+                      Please provide a valid email address.
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <label for="phone" class="form-label">Phone Number*</label>
+                    <input type="tel" class="form-control" id="phone" required>
+                    <div class="invalid-feedback">
+                      Please provide your phone number.
+                    </div>
+                  </div>
+                  
+                  <div class="col-12">
+                    <label for="address" class="form-label">Street Address*</label>
+                    <input type="text" class="form-control" id="address" required>
+                    <div class="invalid-feedback">
+                      Please provide your street address.
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <label for="city" class="form-label">City*</label>
+                    <input type="text" class="form-control" id="city" required>
+                    <div class="invalid-feedback">
+                      Please provide your city.
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-3">
+                    <label for="state" class="form-label">State*</label>
+                    <select class="form-select" id="state" required>
+                      <option value="" selected disabled>Select State</option>
+                      <option value="AL">Alabama</option>
+                      <option value="AK">Alaska</option>
+                      <!-- Add all states here -->
+                      <option value="WY">Wyoming</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select your state.
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-3">
+                    <label for="zip" class="form-label">ZIP Code*</label>
+                    <input type="text" class="form-control" id="zip" required>
+                    <div class="invalid-feedback">
+                      Please provide your ZIP code.
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="form-navigation mt-4">
+                  <button type="button" class="btn btn-primary next-step">Next: Living Situation</button>
+                </div>
+              </div>
+              
+              <!-- Step 2: Living Situation -->
+              <div class="form-step" data-step="2" style="display: none;">
+                <h3 class="form-section-title">Living Situation</h3>
+                
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="housingType" class="form-label">Housing Type*</label>
+                    <select class="form-select" id="housingType" required>
+                      <option value="" selected disabled>Select Housing Type</option>
+                      <option value="house">House</option>
+                      <option value="apartment">Apartment</option>
+                      <option value="condo">Condo</option>
+                      <option value="townhouse">Townhouse</option>
+                      <option value="mobile">Mobile Home</option>
+                      <option value="other">Other</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select your housing type.
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <label for="ownership" class="form-label">Do you own or rent?*</label>
+                    <select class="form-select" id="ownership" required>
+                      <option value="" selected disabled>Select Option</option>
+                      <option value="own">Own</option>
+                      <option value="rent">Rent</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select if you own or rent.
+                    </div>
+                  </div>
+                  
+                  <div class="col-12" id="landlordInfoSection" style="display: none;">
+                    <div class="card bg-light p-3 mb-3">
+                      <div class="card-body">
+                        <h5>Landlord Information</h5>
+                        <div class="row g-3">
+                          <div class="col-md-6">
+                            <label for="landlordName" class="form-label">Landlord Name</label>
+                            <input type="text" class="form-control" id="landlordName">
+                          </div>
+                          <div class="col-md-6">
+                            <label for="landlordPhone" class="form-label">Landlord Phone</label>
+                            <input type="tel" class="form-control" id="landlordPhone">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <label for="householdMembers" class="form-label">Number of People in Household*</label>
+                    <select class="form-select" id="householdMembers" required>
+                      <option value="" selected disabled>Select</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6+">6+</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select the number of people in your household.
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <label for="children" class="form-label">Do you have children?*</label>
+                    <select class="form-select" id="children" required>
+                      <option value="" selected disabled>Select</option>
+                      <option value="yes">Yes</option>
+                      <option value="no">No</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select if you have children.
+                    </div>
+                  </div>
+                  
+                  <div class="col-12" id="childrenAgesSection" style="display: none;">
+                    <label for="childrenAges" class="form-label">Ages of Children</label>
+                    <input type="text" class="form-control" id="childrenAges" placeholder="e.g., 5, 8, 12">
+                  </div>
+                  
+                  <div class="col-12">
+                    <label for="currentPets" class="form-label">Do you currently have any pets?*</label>
+                    <select class="form-select" id="currentPets" required>
+                      <option value="" selected disabled>Select</option>
+                      <option value="yes">Yes</option>
+                      <option value="no">No</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select if you currently have pets.
+                    </div>
+                  </div>
+                  
+                  <div class="col-12" id="petDetailsSection" style="display: none;">
+                    <label for="petDetails" class="form-label">Please provide details about your current pets</label>
+                    <textarea class="form-control" id="petDetails" rows="3" placeholder="Type, breed, age, and gender of your current pets"></textarea>
+                  </div>
+                </div>
+                
+                <div class="form-navigation mt-4">
+                  <button type="button" class="btn btn-outline-secondary prev-step">Previous</button>
+                  <button type="button" class="btn btn-primary next-step">Next: Pet Preferences</button>
+                </div>
+              </div>
+              
+              <!-- Step 3: Pet Preferences -->
+              <div class="form-step" data-step="3" style="display: none;">
+                <h3 class="form-section-title">Pet Preferences</h3>
+                
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="petType" class="form-label">What type of pet are you interested in?*</label>
+                    <select class="form-select" id="petType" required>
+                      <option value="" selected disabled>Select Pet Type</option>
+                      <option value="dog">Dog</option>
+                      <option value="cat">Cat</option>
+                      <option value="both">Both Dogs and Cats</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select your preferred pet type.
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <label for="specificPet" class="form-label">Are you interested in a specific pet from our shelter?</label>
+                    <input type="text" class="form-control" id="specificPet" placeholder="Enter pet name if applicable">
+                  </div>
+                  
+                  <div class="col-12">
+                    <label class="form-label">Age Range (select all that apply)*</label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="ageBaby" name="agePreference" value="baby">
+                      <label class="form-check-label" for="ageBaby">Baby (0-1 year)</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="ageYoung" name="agePreference" value="young">
+                      <label class="form-check-label" for="ageYoung">Young (1-3 years)</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="ageAdult" name="agePreference" value="adult">
+                      <label class="form-check-label" for="ageAdult">Adult (3-8 years)</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="ageSenior" name="agePreference" value="senior">
+                      <label class="form-check-label" for="ageSenior">Senior (8+ years)</label>
+                    </div>
+                  </div>
+                  
+                  <div class="col-12">
+                    <label class="form-label">Gender Preference*</label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="genderPreference" id="genderMale" value="male">
+                      <label class="form-check-label" for="genderMale">Male</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="genderPreference" id="genderFemale" value="female">
+                      <label class="form-check-label" for="genderFemale">Female</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="genderPreference" id="genderNoPreference" value="no preference" checked>
+                      <label class="form-check-label" for="genderNoPreference">No Preference</label>
+                    </div>
+                  </div>
+                  
+                  <div class="col-12">
+                    <label for="experienceLevel" class="form-label">Experience Level with Pets*</label>
+                    <select class="form-select" id="experienceLevel" required>
+                      <option value="" selected disabled>Select Experience Level</option>
+                      <option value="first-time">First-time pet owner</option>
+                      <option value="beginner">Beginner (had 1-2 pets before)</option>
+                      <option value="intermediate">Intermediate (had multiple pets)</option>
+                      <option value="experienced">Experienced (had many pets over years)</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select your experience level.
+                    </div>
+                  </div>
+                  
+                  <div class="col-12">
+                    <label for="activityLevel" class="form-label">Preferred Pet Activity Level*</label>
+                    <select class="form-select" id="activityLevel" required>
+                      <option value="" selected disabled>Select Activity Level</option>
+                      <option value="low">Low (calm, relaxed pet)</option>
+                      <option value="medium">Medium (moderately active)</option>
+                      <option value="high">High (very energetic)</option>
+                      <option value="any">Any activity level</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select your preferred pet activity level.
+                    </div>
+                  </div>
+                  
+                  <div class="col-12">
+                    <label for="additionalPreferences" class="form-label">Additional Preferences or Requirements</label>
+                    <textarea class="form-control" id="additionalPreferences" rows="3" placeholder="Please describe any specific traits, behaviors, or characteristics you're looking for in a pet"></textarea>
+                  </div>
+                </div>
+                
+                <div class="form-navigation mt-4">
+                  <button type="button" class="btn btn-outline-secondary prev-step">Previous</button>
+                  <button type="button" class="btn btn-primary next-step">Next: Review</button>
+                </div>
+              </div>
+              
+              <!-- Step 4: Review & Submit -->
+              <div class="form-step" data-step="4" style="display: none;">
+                <h3 class="form-section-title">Review Your Application</h3>
+                
+                <div class="review-section">
+                  <p>Please review your information before submitting your application.</p>
+                  
+                  <div class="card mb-3">
+                    <div class="card-header d-flex justify-content-between">
+                      <span><i class="fas fa-user me-2"></i> Personal Information</span>
+                      <button type="button" class="btn btn-sm btn-link edit-section" data-step="1">Edit</button>
+                    </div>
+                    <div class="card-body">
+                      <div id="reviewPersonalInfo">
+                        <!-- Will be filled dynamically -->
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="card mb-3">
+                    <div class="card-header d-flex justify-content-between">
+                      <span><i class="fas fa-home me-2"></i> Living Situation</span>
+                      <button type="button" class="btn btn-sm btn-link edit-section" data-step="2">Edit</button>
+                    </div>
+                    <div class="card-body">
+                      <div id="reviewLivingSituation">
+                        <!-- Will be filled dynamically -->
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="card mb-3">
+                    <div class="card-header d-flex justify-content-between">
+                      <span><i class="fas fa-paw me-2"></i> Pet Preferences</span>
+                      <button type="button" class="btn btn-sm btn-link edit-section" data-step="3">Edit</button>
+                    </div>
+                    <div class="card-body">
+                      <div id="reviewPetPreferences">
+                        <!-- Will be filled dynamically -->
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="form-check mb-4">
+                    <input class="form-check-input" type="checkbox" id="termsAgreement" required>
+                    <label class="form-check-label" for="termsAgreement">
+                      I certify that all information provided is accurate and complete. I understand that providing false information may result in my application being rejected.*
+                    </label>
+                    <div class="invalid-feedback">
+                      You must agree to the terms to proceed.
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="form-navigation mt-4">
+                  <button type="button" class="btn btn-outline-secondary prev-step">Previous</button>
+                  <button type="submit" class="btn btn-success">Submit Application</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Thank You Modal -->
+  <div class="modal fade" id="thankYouModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <div class="thank-you-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h3>Thank You for Your Application!</h3>
+          <p>We've received your adoption application and will review it shortly. Our team will contact you within 2-3 business days to discuss the next steps.</p>
+          <p>Your application reference number: <span id="applicationReference" class="fw-bold"></span></p>
+        </div>
+        <div class="modal-footer justify-content-center border-0">
+          <a href="../Adopt/adopt.html" class="btn btn-primary">Return to Adoption Page</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <!-- About Us -->
+            <div class="col-lg-4 col-md-6 footer-section">
+              <h5>About Us</h5>
+              <p>We're dedicated to finding loving forever homes for animals in need. Since 2010, we've helped over 5,000 pets find their families.</p>
+              <div class="social-links mt-3">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+            
+            <!-- Quick Links -->
+            <div class="col-lg-4 col-md-6 footer-section">
+              <h5>Quick Links</h5>
+              <div class="footer-links">
+                <a href="#"><i class="fas fa-paw pet-icon"></i> Available Pets</a>
+                <a href="#"><i class="fas fa-heart pet-icon"></i> Adoption Process</a>
+                <a href="#"><i class="fas fa-hand-holding-heart pet-icon"></i> Donate</a>
+                <a href="#"><i class="fas fa-user-friends pet-icon"></i> Volunteer</a>
+                <a href="#"><i class="fas fa-question-circle pet-icon"></i> FAQ</a>
+              </div>
+            </div>
+            
+            <!-- Newsletter -->
+            <div class="col-lg-4 col-md-6 footer-section">
+              <h5>Newsletter</h5>
+              <p>Subscribe to get updates on new arrivals and adoption events.</p>
+              <form class="subscribe-form d-flex mt-3">
+                <input type="email" class="form-control" placeholder="Your Email">
+                <button type="submit" class="btn btn-primary">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          
+          <!-- Paw Print Divider -->
+          <div class="pet-paw-divider">
+            <div class="paw-line"></div>
+            <i class="fas fa-paw fa-2x paw-icon"></i>
+            <div class="paw-line"></div>
+          </div>
+          
+          <!-- Support Section -->
+          <div class="row text-center">
+            <div class="col-md-4 mb-3">
+              <h6><i class="fas fa-heart me-2"></i> Emergency Support</h6>
+              <p class="small">24/7 Animal Emergency: (123) 555-7890</p>
+            </div>
+            <div class="col-md-4 mb-3">
+              <h6><i class="fas fa-hands-helping me-2"></i> Foster Program</h6>
+              <p class="small">Open your home temporarily: tails@petadoption.org</p>
+            </div>
+            <div class="col-md-4 mb-3">
+              <h6><i class="fas fa-truck me-2"></i> Transport Volunteers</h6>
+              <p class="small">Help animals reach forever homes: transport@petadoption.org</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="footer-bottom text-center">
+          <div class="container">
+            <p class="mb-0">© 2025 All rights reserved. | <a href="#" class="text-white">Privacy Policy</a> | <a href="#" class="text-white">Terms of Service</a></p>
+          </div>
+        </div>
+      </footer>
+    
+      <script src="application-form.js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('adoptionForm');
+  const steps = document.querySelectorAll('.form-step');
+  const progressSteps = document.querySelectorAll('.progress-step');
+  let currentStep = 0;
+
+  function showStep(index) {
+    steps.forEach((step, i) => {
+      step.style.display = i === index ? 'block' : 'none';
+      progressSteps[i].classList.toggle('active', i <= index);
+    });
+  }
+
+  // ⛔ Removed validation here
+  document.querySelectorAll('.next-step').forEach(button => {
+    button.addEventListener('click', () => {
+      currentStep++;
+      showStep(currentStep);
+    });
+  });
+
+  document.querySelectorAll('.prev-step').forEach(button => {
+    button.addEventListener('click', () => {
+      currentStep--;
+      showStep(currentStep);
+    });
+  });
+
+  document.querySelectorAll('.edit-section').forEach(button => {
+    button.addEventListener('click', () => {
+      currentStep = parseInt(button.dataset.step) - 1;
+      showStep(currentStep);
+    });
+  });
+
+  // Dynamic fields
+  document.getElementById('ownership').addEventListener('change', function () {
+    const landlordSection = document.getElementById('landlordInfoSection');
+    landlordSection.style.display = this.value === 'rent' ? 'block' : 'none';
+  });
+
+  document.getElementById('children').addEventListener('change', function () {
+    document.getElementById('childrenAgesSection').style.display = this.value === 'yes' ? 'block' : 'none';
+  });
+
+  document.getElementById('currentPets').addEventListener('change', function () {
+    document.getElementById('petDetailsSection').style.display = this.value === 'yes' ? 'block' : 'none';
+  });
+
+  // Final form submission still uses full validation
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (!form.checkValidity()) {
+      form.classList.add('was-validated');
+      return;
+    }
+
+    const refNumber = 'PA-' + Math.floor(Math.random() * 1000000);
+    document.getElementById('applicationReference').textContent = refNumber;
+    new bootstrap.Modal(document.getElementById('thankYouModal')).show();
+    form.reset();
+    currentStep = 0;
+    showStep(currentStep);
+  });
+
+  // Start at step 0
+  showStep(currentStep);
+});
+
+      </script>
+
+</body>
