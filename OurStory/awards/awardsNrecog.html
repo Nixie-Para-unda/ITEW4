@@ -1,45 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Stats Section</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awards and Recognitions</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="awardsNrecog.css">
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-text">
-      <h1>Lorem ipsum</h1>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
-    </div>
-    <div class="hero-button">
-      <a href="#" class="btn">Join us</a>
+
+  <!-- Header -->
+  <header class="header py-4">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md-3">
+          <div class="logo">
+            <img src="logo.png" alt="Company Logo" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-md-3 text-end">
+          <button class="login-button">Login</button>
+        </div>
+      </div>
     </div>
   </header>
 
-  <main class="stats-section">
-    <h2>Lorem ipsum</h2>
-    <div class="stat-card">
-      <div class="stat-info">
-        <h3>Volunteers</h3>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg nav-menu">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav w-100 justify-content-between">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">OUR STORY</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Know About Us</a></li>
+              <li><a class="dropdown-item" href="#">Awards & Recognitions</a></li>
+              <li><a class="dropdown-item" href="#">Contributors</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">EVENTS</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">GET INVOLVED</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Volunteer</a></li>
+              <li><a class="dropdown-item" href="#">Donate</a></li>
+              <li><a class="dropdown-item" href="#">Partnerships</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">BOOK A VISIT</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">FAQS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">CONTACT US</a></li>
+        </ul>
       </div>
-      <div class="stat-number">121</div>
     </div>
-    <div class="stat-card">
-      <div class="stat-info">
-        <h3>Donators</h3>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+  </nav>
+
+  <!-- Content Section -->
+  <div class="container">
+      <h1 class="page-title">Awards & Recognitions</h1>
+      
+      <div class="awards">
+          <div class="award-item">
+              <img src="awards.png" alt="Award" class="award-icon">
+              <p class="year">2021</p>
+              <p class="title">Volunteer Champion Award</p>
+              <p class="location">MANILA, PHILIPPINES</p>
+          </div>
+          <div class="award-item">
+              <img src="awards.png" alt="Award" class="award-icon">
+              <p class="year">2022</p>
+              <p class="title">Best Animal Rescue Organization of the Year</p>
+              <p class="location">MAKATI, PHILIPPINES</p>
+          </div>  
+          <div class="award-item">
+              <img src="awards.png" alt="Award" class="award-icon">
+              <p class="year">2023</p>
+              <p class="title">Philippine Foster Hero Award</p>
+              <p class="location">MOA ARENA, PHILIPPINES</p>
+          </div>
+          <div class="award-item">
+              <img src="awards.png" alt="Award" class="award-icon">
+              <p class="year">2024</p>
+              <p class="title">Adoption Champion Award</p>
+              <p class="location">BERLIN, GERMANY</p>
+          </div>
       </div>
-      <div class="stat-number">121</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-info">
-        <h3>Adopters</h3>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+
+      <div class="journey-section">
+          <div class="journey-content">
+              <div class="text-content">
+                  <h4>OUR JOURNEY</h4>
+                  <p class="raise" id="raise">How We Raised 1M to Support Pet Adoption</p>
+                  <p>At TAILS, our journey began with a deep passion for animal welfare and the belief that every pet deserves a loving home. Over the years, we've worked tirelessly to raise 34 million pesos, funding vital programs and initiatives that make a real difference for pets across the Philippines.</p>
+                  <p>Through collaboration with local shelters, volunteers, and generous donors, we have been able to expand our reach and provide life-saving services to countless animals in need. From rescue operations to adoption campaigns, each milestone in our journey is a testament to the incredible community that has rallied around us.</p>
+                  <p>Thank you for being part of our journey. Together, we continue to make a meaningful impact in the lives of both pets and families.</p>
+              </div>
+              <img src="animals.jpg" alt="Team with Animals" class="team-photo">
+          </div>
       </div>
-      <div class="stat-number">121</div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+   <!-- Footer -->
+   <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- About Us -->
+            <div class="col-lg-4 col-md-6 footer-section">
+                <h5>About Us</h5>
+                <p>We're dedicated to finding loving forever homes for animals in need. Since 2010, we've helped over 5,000 pets find their families.</p>
+                <div class="social-links mt-3">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <!-- Quick Links -->
+            <div class="col-lg-4 col-md-6 footer-section">
+                <h5>Quick Links</h5>
+                <div class="footer-links">
+                    <a href="#"><i class="fas fa-paw pet-icon"></i> Available Pets</a>
+                    <a href="#"><i class="fas fa-heart pet-icon"></i> Adoption Process</a>
+                    <a href="#"><i class="fas fa-hand-holding-heart pet-icon"></i> Donate</a>
+                    <a href="#"><i class="fas fa-user-friends pet-icon"></i> Volunteer</a>
+                    <a href="#"><i class="fas fa-question-circle pet-icon"></i> FAQ</a>
+                </div>
+            </div>
+            
+            <!-- Newsletter -->
+            <div class="col-lg-4 col-md-6 footer-section">
+                <h5>Newsletter</h5>
+                <p>Subscribe to get updates on new arrivals and adoption events.</p>
+                <form class="subscribe-form d-flex mt-3">
+                    <input type="email" class="form-control" placeholder="Your Email">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Paw Print Divider -->
+        <div class="pet-paw-divider">
+            <div class="paw-line"></div>
+            <i class="fas fa-paw fa-2x paw-icon"></i>
+            <div class="paw-line"></div>
+        </div>
+        
+        <!-- Support Section -->
+        <div class="row text-center">
+            <div class="col-md-4 mb-3">
+                <h6><i class="fas fa-heart me-2"></i> Emergency Support</h6>
+                <p class="small">24/7 Animal Emergency: (123) 555-7890</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h6><i class="fas fa-hands-helping me-2"></i> Foster Program</h6>
+                <p class="small">Open your home temporarily: tails@petadoption.org</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h6><i class="fas fa-truck me-2"></i> Transport Volunteers</h6>
+                <p class="small">Help animals reach forever homes: transport@petadoption.org</p>
+            </div>
+        </div>
     </div>
-  </main>
+    
+    <!-- Copyright -->
+    <div class="footer-bottom text-center">
+        <div class="container">
+            <p class="mb-0">© 2025 All rights reserved. | <a href="#" class="text-white">Privacy Policy</a> | <a href="#" class="text-white">Terms of Service</a></p>
+        </div>
+    </div>
+</footer>
+
+
 </body>
 </html>

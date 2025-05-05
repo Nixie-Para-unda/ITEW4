@@ -159,6 +159,114 @@ p, h1, h2, h3, h4, h5, h6, a, span, div {
   font-family: 'Roboto', sans-serif;
 }
 
+/* Footer Styles */
+.footer {
+  background-color: #353838;
+  color: #ffffff;
+  padding: 40px 0 20px;
+}
+
+.footer h5 {
+  font-weight: 600;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer h5:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #fefffe;
+}
+
+.footer-links a {
+  color: #ecf0f1;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #81c784;
+  transform: translateX(5px);
+}
+
+.social-links a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-color: #1b5e20;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 36px;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #4caf50;
+  transform: translateY(-3px);
+}
+
+.subscribe-form .form-control {
+  border-radius: 30px 0 0 30px;
+  border: none;
+  box-shadow: none;
+}
+
+.subscribe-form .btn {
+  border-radius: 0 30px 30px 0;
+  background-color: #4caf50;
+  border: none;
+}
+
+.pet-icon {
+  font-size: 18px;
+  margin-right: 5px;
+  color: #a5d6a7;
+}
+
+.footer-bottom {
+  background-color: #1b5e20;
+  padding: 15px 0;
+  margin-top: 30px;
+  margin-bottom: -30px;
+}
+
+.pet-paw-divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.paw-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.paw-icon {
+  margin: 0 15px;
+  color: #a5d6a7;
+}
+
+@media (max-width: 767.98px) {
+  .footer-section {
+      margin-bottom: 30px;
+  }
+
+  .footer h5 {
+      margin-top: 15px;
+  }
+}
+
+
 /* Responsive Styles */
 @media (max-width: 992px) {
   .content-title {
