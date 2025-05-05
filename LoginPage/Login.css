@@ -28,8 +28,7 @@ body {
 }
 
 .auth-image {
-    background-image: url('../images/black.jpg');
-    background-size: cover;
+    background-image: url('../images/TAILSLogin.png');
     background-position: center;
     height: 100%;
 }
