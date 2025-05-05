@@ -208,6 +208,10 @@ header .logo img {
     color: #fff;
 }
 
+.block-p{
+    font-size: 20px;
+}
+
 
 /* Quoation */
 .quoatation-section{
@@ -240,6 +244,7 @@ header .logo img {
 
 .quotation-p{
     margin-top: 50px;
+    text-align: justify;
 }
 
 .black-box {
