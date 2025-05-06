@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Bambi - Puspin</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Profile.css">
+</head>
+<body>
+<!-- Header -->
+<header class="header py-4">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <!-- Logo -->
+        <div class="col-md-3">
+          <div class="logo">
+            <a href="../LandingPage/Home.html">
+              <img src="" alt="TAILS Logo" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <!-- Login Button -->
+        <div class="col-md-3 text-end">
+          <a href="../LoginPage/Login.html">
+            <button class="login-button">Login</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg nav-menu">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav w-100 justify-content-between">
+          
+          <!-- Home -->
+          <li class="nav-item">
+            <a class="nav-link" href="../LandingPage/Home.html">Home</a>
+          </li>
+
+          <!-- OurStory -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+              Our Story
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../OurStory/">About Us</a></li>
+              <li><a class="dropdown-item" href="../OurStory/">Awards and Recognition</a></li>
+              <li><a class="dropdown-item" href="../OurStory/">Contributors</a></li>
+            </ul>
+          </li>
+
+          <!-- Events -->
+          <li class="nav-item"> 
+            <a class="nav-link" href="../Events-Page/event.html">Events</a>
+          </li>
+
+          <!-- Get Involved -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+              Get Involved
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../VolunteerPage/Volunteer.html">Volunteer</a></li>
+              <li><a class="dropdown-item" href="../Donate/donate.html">Donate</a></li>
+              <li><a class="dropdown-item" href="../Adopt/adopt.html">Adopt</a></li>
+            </ul>
+          </li>
+
+          <!-- Book a Visit -->
+          <li class="nav-item">
+            <a class="nav-link" href="../BookAVisit/Book.html">Book a Visit</a>
+          </li>
+
+          <!-- FAQs -->
+          <li class="nav-item">
+            <a class="nav-link" href="../FAQsPage/FAQs.html">FAQs</a>
+          </li>
+
+          <!-- Contact Us -->
+          <li class="nav-item">
+            <a class="nav-link" href="../contact-us/ContactUs.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+     <!-- Main Content -->
+<div class="content-container">
+    <div class="pet-profile">
+      <!-- Left Sidebar -->
+      <div class="profile-sidebar">
+        <img src="../images/bambi1.png" alt="Bambi the Cat" class="profile-main-image" id="mainImage">
+        <div class="profile-thumbnails">
+          <img src="../images/bambi2.png" alt="Bambi playing" class="profile-thumbnail" onclick="document.getElementById('mainImage').src = this.src">
+          <img src="../images/bambi3.png" alt="Bambi resting" class="profile-thumbnail" onclick="document.getElementById('mainImage').src = this.src">
+          <img src="../images/bambi4.png" alt="Bambi looking around" class="profile-thumbnail" onclick="document.getElementById('mainImage').src = this.src">
+        </div>
+        <div class="profile-quick-info">
+          <div class="info-item">
+            <span class="info-label">Breed</span>
+            <span class="info-value">Puspin</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Age</span>
+            <span class="info-value">2 years</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Gender</span>
+            <span class="info-value">Female</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Size</span>
+            <span class="info-value">Small</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Weight</span>
+            <span class="info-value">8 lbs</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Color</span>
+            <span class="info-value">White and Gray</span>
+          </div>
+        </div>
+        <div class="adoption-fee">
+          Adoption Fee: $100
+        </div>
+      </div>
+  
+      <!-- Right Content -->
+      <div class="profile-content">
+        <div class="profile-header">
+          <div>
+            <h1 class="pet-name">Bambi</h1>
+            <p class="pet-subtitle">Puspin • Female • 2 years</p>
+            <div style="margin-top: 10px;">
+              <span class="profile-badge">Cat</span>
+              <span class="profile-badge">Available</span>
+            </div>
+          </div>
+          <div class="action-buttons">
+            <a href="" class="btn btn-primary">Adopt Me</a>
+            <a href="" class="btn btn-outline">Ask About Me</a>
+          </div>
+        </div>
+  
+        <div class="card">
+          <h2 class="card-title">About Bambi</h2>
+          <p>Bambi is a curious and adventurous Puspin who brings joy and mischief to any home. She’s playful and loves climbing, chasing feather toys, and basking in the sunlight.</p>
+          <p>She was rescued from the streets and has grown into a healthy, affectionate cat. Bambi enjoys exploring her environment and would love a home with cozy corners to nap in and toys to keep her entertained.</p>
+          <p>Bambi gets along well with calm pets and prefers a quiet, peaceful environment. She’s fully litter-trained and enjoys cuddles once she warms up to you.</p>
+  
+          <div class="pet-tags">
+            <span class="pet-tag">Playful</span>
+            <span class="pet-tag">Curious</span>
+            <span class="pet-tag">Adventurous</span>
+            <span class="pet-tag">Litter-trained</span>
+          </div>
+        </div>
+  
+        <div class="card">
+          <h2 class="card-title">Bambi's Personality</h2>
+          <div class="traits-grid">
+            <div class="trait-item">
+              <div class="trait-icon">😺</div>
+              <div class="trait-label">Energy Level</div>
+              <div>Medium</div>
+            </div>
+            <div class="trait-item">
+              <div class="trait-icon">🧠</div>
+              <div class="trait-label">Intelligence</div>
+              <div>High</div>
+            </div>
+            <div class="trait-item">
+              <div class="trait-icon">🏠</div>
+              <div class="trait-label">Trainability</div>
+              <div>Good</div>
+            </div>
+            <div class="trait-item">
+              <div class="trait-icon">👪</div>
+              <div class="trait-label">Family Friendly</div>
+              <div>Good</div>
+            </div>
+            <div class="trait-item">
+              <div class="trait-icon">🐕</div>
+              <div class="trait-label">Other Pets</div>
+              <div>Moderate</div>
+            </div>
+            <div class="trait-item">
+              <div class="trait-icon">🔊</div>
+              <div class="trait-label">Meowing Level</div>
+              <div>Low</div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="card">
+          <h2 class="card-title">Health & Care</h2>
+          <div class="health-item">
+            <div class="health-icon">✅</div>
+            <div>
+              <strong>Vaccinations:</strong> Bambi is up-to-date on core feline vaccines including FVRCP and rabies.
+            </div>
+          </div>
+          <div class="health-item">
+            <div class="health-icon">✅</div>
+            <div>
+              <strong>Spayed:</strong> Yes
+            </div>
+          </div>
+          <div class="health-item">
+            <div class="health-icon">✅</div>
+            <div>
+              <strong>Microchipped:</strong> Yes
+            </div>
+          </div>
+          <div class="health-item">
+            <div class="health-icon">✅</div>
+            <div>
+              <strong>Health Check:</strong> Bambi has passed her latest vet exam with flying colors.
+            </div>
+          </div>
+          <div class="health-item">
+            <div class="health-icon">ℹ️</div>
+            <div>
+              <strong>Special Needs:</strong> None. Bambi is a healthy and adaptable cat.
+            </div>
+          </div>
+        </div>
+  
+        <div class="card">
+          <h2 class="card-title">Adoption Process</h2>
+          <div class="adoption-steps">
+            <div class="step-item" data-step="1">
+              <div class="step-title">Submit Application</div>
+              <p>Complete the adoption application to start the process for Bambi.</p>
+            </div>
+            <div class="step-item" data-step="2">
+              <div class="step-title">Meet & Greet</div>
+              <p>Meet Bambi in person to see how you bond.</p>
+            </div>
+            <div class="step-item" data-step="3">
+              <div class="step-title">Home Check</div>
+              <p>We’ll check that your space is cat-safe and ready for Bambi.</p>
+            </div>
+            <div class="step-item" data-step="4">
+              <div class="step-title">Adoption Day</div>
+              <p>Sign the papers, pay the fee, and bring home your new feline friend!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <!-- About Us -->
+            <div class="col-lg-4 col-md-6 footer-section">
+              <h5>About Us</h5>
+              <p>We're dedicated to finding loving forever homes for animals in need. Since 2010, we've helped over 5,000 pets find their families.</p>
+              <div class="social-links mt-3">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+            
+            <!-- Quick Links -->
+            <div class="col-lg-4 col-md-6 footer-section">
+              <h5>Quick Links</h5>
+              <div class="footer-links">
+                <a href="#"><i class="fas fa-paw pet-icon"></i> Available Pets</a>
+                <a href="#"><i class="fas fa-heart pet-icon"></i> Adoption Process</a>
+                <a href="#"><i class="fas fa-hand-holding-heart pet-icon"></i> Donate</a>
+                <a href="#"><i class="fas fa-user-friends pet-icon"></i> Volunteer</a>
+                <a href="#"><i class="fas fa-question-circle pet-icon"></i> FAQ</a>
+              </div>
+            </div>
+            
+            <!-- Newsletter -->
+            <div class="col-lg-4 col-md-6 footer-section">
+              <h5>Newsletter</h5>
+              <p>Subscribe to get updates on new arrivals and adoption events.</p>
+              <form class="subscribe-form d-flex mt-3">
+                <input type="email" class="form-control" placeholder="Your Email">
+                <button type="submit" class="btn btn-primary">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          
+          <!-- Paw Print Divider -->
+          <div class="pet-paw-divider">
+            <div class="paw-line"></div>
+            <i class="fas fa-paw fa-2x paw-icon"></i>
+            <div class="paw-line"></div>
+          </div>
+          
+          <!-- Support Section -->
+          <div class="row text-center">
+            <div class="col-md-4 mb-3">
+              <h6><i class="fas fa-heart me-2"></i> Emergency Support</h6>
+              <p class="small">24/7 Animal Emergency: (123) 555-7890</p>
+            </div>
+            <div class="col-md-4 mb-3">
+              <h6><i class="fas fa-hands-helping me-2"></i> Foster Program</h6>
+              <p class="small">Open your home temporarily: tails@petadoption.org</p>
+            </div>
+            <div class="col-md-4 mb-3">
+              <h6><i class="fas fa-truck me-2"></i> Transport Volunteers</h6>
+              <p class="small">Help animals reach forever homes: transport@petadoption.org</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="footer-bottom text-center">
+          <div class="container">
+            <p class="mb-0">© 2025 All rights reserved. | <a href="#" class="text-white">Privacy Policy</a> | <a href="#" class="text-white">Terms of Service</a></p>
+          </div>
+        </div>
+      </footer>
+    
+      <script src="scripts.js"></script>
+
+  <script>
+    // Simple script to handle image switching
+    function changeMainImage(src) {
+      document.getElementById('mainImage').src = src;
+    }
+  </script>
+</body>
+</html>
