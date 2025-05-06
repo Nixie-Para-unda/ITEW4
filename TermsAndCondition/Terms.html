@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Terms & Conditions - Happy Paws</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Bootstrap CDN (Optional but recommended for grid and responsiveness) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Icons (for paw icon) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to right, #fffaf5, #fef7f0);
+      color: #444;
+      margin: 0;
+      padding: 0;
+    }
+
+    .terms-container {
+      max-width: 900px;
+      margin: 50px auto;
+      background: #ffffff;
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .terms-container::before {
+      content: "🐾";
+      font-size: 120px;
+      color: #ffe3d2;
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      transform: rotate(-10deg);
+      z-index: 0;
+    }
+
+    .terms-container h2 {
+      font-weight: 600;
+      font-size: 32px;
+      color: #6b4d3b;
+      margin-bottom: 25px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .terms-container p {
+      font-size: 17px;
+      line-height: 1.8;
+      margin-bottom: 18px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .terms-container strong {
+      color: #bf6f52;
+    }
+
+    .btn-group {
+      display: flex;
+      justify-content: flex-end;
+      gap: 15px;
+      margin-top: 40px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .btn-agree {
+      background-color: #11730c;
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      transition: 0.3s ease;
+      box-shadow: 0 4px 12px rgba(9, 87, 5, 0.3);
+    }
+
+    .btn-agree:hover {
+      background-color: #074224;
+    }
+
+    .btn-cancel {
+      background-color: #942424;
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      transition: 0.3s ease;
+      box-shadow: 0 4px 12px rgba(241, 147, 147, 0.3);
+    }
+
+    .btn-cancel:hover {
+      background-color: #650606;
+    }
+
+    @media (max-width: 600px) {
+      .terms-container {
+        padding: 30px 20px;
+      }
+      .btn-group {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="terms-container">
+    <h2><i class="bi bi-patch-check-fill text-success me-2"></i>Adoption Terms & Conditions</h2>
+
+    <p>Welcome to <strong>Welcome to TAILS - The Animal Initiative for Love & Support </strong>! We’re thrilled you’re considering giving one of our furry friends a forever home. Before proceeding, please read our terms carefully.</p>
+
+    <p><strong>1. Commitment to Care:</strong> Adopters must provide a loving, lifelong home. This includes proper food, shelter, companionship, and medical care.</p>
+
+    <p><strong>2. No Rehoming:</strong> If for any reason you cannot continue to care for your adopted animal, they must be returned to Happy Paws. This ensures their safety and ongoing care.</p>
+
+    <p><strong>3. Approval Process:</strong> All applications go through a careful review. This may include interviews, reference checks, and a home visit to ensure the environment is safe.</p>
+
+    <p><strong>4. Follow-Up:</strong> Our team may check in periodically to ensure a smooth transition and that your pet is thriving in their new home.</p>
+
+    <p><strong>5. Legal Agreement:</strong> By clicking "Agree", you confirm that you have read, understood, and accepted these terms in full.</p>
+
+    <div class="btn-group">
+      <button class="btn-agree" onclick="handleAgree()">I Agree</button>
+      <button class="btn-cancel" onclick="handleCancel()">Cancel</button>
+    </div>
+  </div>
+
+  <script>
+    function handleAgree() {
+      alert("Thank you for agreeing! You may now continue with your adoption journey.");
+      window.location.href = "../LoginPage/Login.html";
+    }
+
+    function handleCancel() {
+      alert("You must agree to continue. Returning to home.");
+      window.location.href = "../LoginPage/Login.html";
+    }
+  </script>
+
+</body>
+</html>

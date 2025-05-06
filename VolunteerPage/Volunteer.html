@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer - Animal Adoption Center</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/open-sans/1.1.0/css/open-sans.min.css" rel="stylesheet">
+    <link href="Volunteer.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header py-4">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+
+                <!-- Logo -->
+                <div class="col-md-3">
+                    <div class="logo">
+                        <img src="../images/logo.png" alt="Company Logo" class="img-fluid">
+                    </div>
+                </div>
+
+                <!-- Login Button -->
+                <div class="col-md-3 text-end">
+                    <a href="../LoginPage/Login.html">
+                        <button class="login-button">Login</button>
+                        </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg nav-menu">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav w-100 justify-content-between">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../LandingPage/Home.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            Our Story
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../OurStory/know-about-us/about.html">About Us</a></li>
+                            <li><a class="dropdown-item" href="../OurStory/awards/awards.html">Awards and Recognition</a></li>
+                            <li><a class="dropdown-item" href="../OurStory/contributors/contribute.html">Contributors</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Events-Page/event.html">Events</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            Get Involved
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../VolunteerPage/Volunteer.html">Volunteer</a></li>
+                            <li><a class="dropdown-item" href="../Donate/donate.html">Donate</a></li>
+                            <li><a class="dropdown-item" href="../Adopt/adopt.html">Adopt</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../BookAVisit/Book.html">Book a Visit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../FAQsPage/FAQs.html">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact-us/ContactUs.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold text-white">Make a Difference</h1>
+            <p class="lead text-white">Join our volunteer team and help animals find their forever homes</p>
+            <a href="#volunteer-form" class="btn btn-light btn-lg mt-3">Volunteer Now</a>
+        </div>
+    </section>
+
+    <!-- Why Volunteer Section -->
+    <section class="why-volunteer py-5">
+        <div class="container">
+            <h2 class="text-center section-title mb-5">Why Volunteer With Us?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3 class="card-title mt-4">Save Lives</h3>
+                            <p class="card-text">Your time directly impacts the well-being of animals in need, helping them find loving homes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon">
+                                <i class="fas fa-hands-helping"></i>
+                            </div>
+                            <h3 class="card-title mt-4">Build Skills</h3>
+                            <p class="card-text">Gain valuable experience and develop new skills while making a meaningful contribution.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3 class="card-title mt-4">Join a Community</h3>
+                            <p class="card-text">Connect with like-minded animal lovers who share your passion for animal welfare.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Roles Section -->
+    <section class="volunteer-roles py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center section-title mb-5">Volunteer Opportunities</h2>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="role-card d-flex">
+                        <div class="role-icon">
+                            <i class="fas fa-paw"></i>
+                        </div>
+                        <div class="role-content">
+                            <h3>Animal Care</h3>
+                            <p>Help with daily care routines including feeding, grooming, and socializing our animals.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="role-card d-flex">
+                        <div class="role-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="role-content">
+                            <h3>Foster Program</h3>
+                            <p>Provide temporary care for animals in your home until they're ready for adoption.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="role-card d-flex">
+                        <div class="role-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <div class="role-content">
+                            <h3>Photography</h3>
+                            <p>Take high-quality photos of our animals to help them find forever homes faster.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="role-card d-flex">
+                        <div class="role-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <div class="role-content">
+                            <h3>Event Support</h3>
+                            <p>Assist with adoption events, fundraisers, and community outreach programs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Stories Section -->
+    <section class="volunteer-stories py-5">
+        <div class="container">
+            <h2 class="text-center section-title mb-5">Volunteer Stories</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Volunteering at the animal adoption center has been the most rewarding experience. Seeing animals find their forever homes makes all the hard work worth it."</p>
+                            <div class="testimonial-author d-flex align-items-center mt-3">
+                                <div class="author-img volunteerOne" ></div>
+                                <div>
+                                    <h5 class="mb-0">Nixie Jewel B. Para-unda</h5>
+                                    <small>Volunteer since 2022</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"I started as a weekend volunteer and fell in love with the mission. The community of volunteers and staff are like family now, all united by our love for animals."</p>
+                            <div class="testimonial-author d-flex align-items-center mt-3">
+                                <div class="author-img volunteerTwo"></div>
+                                <div>
+                                    <h5 class="mb-0">Kristine Mae T. Tolentino</h5>
+                                    <small>Volunteer since 2023</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="impact-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center section-title mb-5">Your Impact</h2>
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="impact-card">
+                        <div class="impact-number" id="adoptions-counter">0</div>
+                        <div class="impact-label">Adoptions Last Year</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="impact-card">
+                        <div class="impact-number" id="volunteers-counter">0</div>
+                        <div class="impact-label">Active Volunteers</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="impact-card">
+                        <div class="impact-number" id="hours-counter">0</div>
+                        <div class="impact-label">Volunteer Hours Monthly</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Form Section -->
+    <section class="volunteer-form py-5" id="volunteer-form">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="form-container shadow p-4 p-md-5 rounded">
+                        <h2 class="text-center mb-4">Join Our Volunteer Team</h2>
+                        <p class="text-center mb-4">Fill out the form below and we'll contact you with next steps.</p>
+                        <form id="volunteerForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="address" class="form-label">Address</label>
+                                    <input type="text" class="form-control" id="address">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="city" class="form-label">City</label>
+                                    <input type="text" class="form-control" id="city">
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="state" class="form-label">State</label>
+                                    <input type="text" class="form-control" id="state">
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="zip" class="form-label">Zip Code</label>
+                                    <input type="text" class="form-control" id="zip">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Areas of Interest (Select all that apply)</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="animal-care" id="animalCare">
+                                        <label class="form-check-label" for="animalCare">Animal Care</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="fostering" id="fostering">
+                                        <label class="form-check-label" for="fostering">Fostering</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="events" id="events">
+                                        <label class="form-check-label" for="events">Event Support</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="admin" id="admin">
+                                        <label class="form-check-label" for="admin">Administrative Support</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="photography" id="photography">
+                                        <label class="form-check-label" for="photography">Photography</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="availability" class="form-label">Availability</label>
+                                    <select class="form-select" id="availability" required>
+                                        <option value="" selected disabled>Select your availability</option>
+                                        <option value="weekdays">Weekdays</option>
+                                        <option value="weekends">Weekends</option>
+                                        <option value="both">Both Weekdays and Weekends</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="experience" class="form-label">Previous Experience</label>
+                                    <textarea class="form-control" id="experience" rows="3" placeholder="Tell us about any relevant experience you have"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <label for="motivation" class="form-label">Why do you want to volunteer with us?</label>
+                                    <textarea class="form-control" id="motivation" rows="3" required></textarea>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn btn-primary btn-lg w-100">Submit Application</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="form-confirmation mt-4 text-center d-none" id="formConfirmation">
+                            <div class="alert alert-success">
+                                <i class="fas fa-check-circle fa-2x mb-3"></i>
+                                <h4>Thank you for your interest!</h4>
+                                <p>We've received your application and will contact you shortly about the next steps.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer -->
+     <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- About Us -->
+                <div class="col-lg-4 col-md-6 footer-section">
+                    <h5>About Us</h5>
+                    <p>We're dedicated to finding loving forever homes for animals in need. Since 2010, we've helped over 5,000 pets find their families.</p>
+                    <div class="social-links mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="col-lg-4 col-md-6 footer-section">
+                    <h5>Quick Links</h5>
+                    <div class="footer-links">
+                        <a href="#"><i class="fas fa-paw pet-icon"></i> Available Pets</a>
+                        <a href="#"><i class="fas fa-heart pet-icon"></i> Adoption Process</a>
+                        <a href="#"><i class="fas fa-hand-holding-heart pet-icon"></i> Donate</a>
+                        <a href="#"><i class="fas fa-user-friends pet-icon"></i> Volunteer</a>
+                        <a href="#"><i class="fas fa-question-circle pet-icon"></i> FAQ</a>
+                    </div>
+                </div>
+                
+                <!-- Newsletter -->
+                <div class="col-lg-4 col-md-6 footer-section">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe to get updates on new arrivals and adoption events.</p>
+                    <form class="subscribe-form d-flex mt-3">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Paw Print Divider -->
+            <div class="pet-paw-divider">
+                <div class="paw-line"></div>
+                <i class="fas fa-paw fa-2x paw-icon"></i>
+                <div class="paw-line"></div>
+            </div>
+            
+            <!-- Support Section -->
+            <div class="row text-center">
+                <div class="col-md-4 mb-3">
+                    <h6><i class="fas fa-heart me-2"></i> Emergency Support</h6>
+                    <p class="small">24/7 Animal Emergency: (123) 555-7890</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h6><i class="fas fa-hands-helping me-2"></i> Foster Program</h6>
+                    <p class="small">Open your home temporarily: tails@petadoption.org</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h6><i class="fas fa-truck me-2"></i> Transport Volunteers</h6>
+                    <p class="small">Help animals reach forever homes: transport@petadoption.org</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="footer-bottom text-center">
+            <div class="container">
+                <p class="mb-0">© 2025 All rights reserved. | <a href="#" class="text-white">Privacy Policy</a> | <a href="#" class="text-white">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

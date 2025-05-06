@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TAILS - Adopt a Pet</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="adopt.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header py-4">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <!-- Logo -->
+        <div class="col-md-3">
+          <div class="logo">
+            <a href="../LandingPage/Home.html">
+              <img src="../images/logo.png" alt="TAILS Logo" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <!-- Login Button -->
+        <div class="col-md-3 text-end">
+          <a href="../LoginPage/Login.html">
+            <button class="login-button">Login</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg nav-menu">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav w-100 justify-content-between">
+          
+          <!-- Home -->
+          <li class="nav-item">
+            <a class="nav-link" href="../LandingPage/Home.html">Home</a>
+          </li>
+
+          <!-- OurStory -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+              Our Story
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../OurStory/know-about-us/about.html">About Us</a></li>
+              <li><a class="dropdown-item" href="../OurStory/awards/awards.html">Awards and Recognition</a></li>
+              <li><a class="dropdown-item" href="../OurStory/contributors/contribute.html">Contributors</a></li>
+            </ul>
+          </li>
+
+          <!-- Events -->
+          <li class="nav-item"> 
+            <a class="nav-link" href="../Events-Page/event.html">Events</a>
+          </li>
+
+          <!-- Get Involved -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+              Get Involved
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../VolunteerPage/Volunteer.html">Volunteer</a></li>
+              <li><a class="dropdown-item" href="../Donate/donate.html">Donate</a></li>
+              <li><a class="dropdown-item" href="../Adopt/adopt.html">Adopt</a></li>
+            </ul>
+          </li>
+
+          <!-- Book a Visit -->
+          <li class="nav-item">
+            <a class="nav-link" href="../BookAVisit/Book.html">Book a Visit</a>
+          </li>
+
+          <!-- FAQs -->
+          <li class="nav-item">
+            <a class="nav-link" href="../FAQsPage/FAQs.html">FAQs</a>
+          </li>
+
+          <!-- Contact Us -->
+          <li class="nav-item">
+            <a class="nav-link" href="../contact-us/ContactUs.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section for Adoption Page -->
+  <section class="hero-section bg-dark text-white py-5">
+    <div class="content-container text-center">
+      <h1 class="display-4 fw-bold">Find Your New Best Friend</h1>
+      <p class="lead">Give a loving home to a pet in need — adoption is the start of a beautiful story</p>
+      <a href="../Adoption Form/form.html" class="btn btn-warning btn-lg mt-3">Adopt Today</a>
+    </div>
+  </section>
+
+
+  <!-- Filter Section -->
+  <section class="filter-section py-4">
+    <div class="container">
+      <div class="filter-container">
+        <div class="row g-3">
+          <!-- Animal Type Filter -->
+          <div class="col-md-3">
+            <select class="form-select" id="animalTypeFilter">
+              <option value="all">All Pets</option>
+              <option value="dogs">Dogs</option>
+              <option value="cats">Cats</option>
+            </select>
+          </div>
+          
+          <!-- Age Filter -->
+          <div class="col-md-3">
+            <select class="form-select" id="ageFilter">
+              <option value="all">Any Age</option>
+              <option value="baby">Baby</option>
+              <option value="young">Young</option>
+              <option value="adult">Adult</option>
+              <option value="senior">Senior</option>
+            </select>
+          </div>
+          
+          <!-- Gender Filter -->
+          <div class="col-md-3">
+            <select class="form-select" id="genderFilter">
+              <option value="all">Any Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+          
+          <!-- Search -->
+          <div class="col-md-3">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search..." id="searchInput">
+              <button class="btn btn-primary" type="button" id="searchButton">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pets Grid -->
+  <section class="pets-section py-5">
+    <div class="container">
+      <div class="section-heading mb-4">
+        <h2>Available Pets</h2>
+        <div class="green-underline"></div>
+        <p class="text-muted">Click on any pet to learn more about them!</p>
+      </div>
+      
+      <div class="row g-4" id="petsGrid">
+        <!-- Dog 1 -->
+        <div class="col-lg-3 col-md-4 col-sm-6" data-type="dogs" data-age="young" data-gender="male">
+          <div class="pet-card">
+            <div class="pet-image">
+              <img src="https://images2.fanpop.com/image/photos/13600000/-Labradors-labradors-13635394-1600-1200.jpg" alt="Max">
+              <div class="pet-badge dog">Dog</div>
+            </div>
+            <div class="pet-info">
+              <h3>Max</h3>
+              <p class="pet-description">Labrador Retriever • Male • 2 years</p>
+              <div class="pet-tags">
+                <span class="pet-tag">Playful</span>
+                <span class="pet-tag">Friendly</span>
+                <span class="pet-tag">Active</span>
+              </div>
+              <a href="../AdoptionProfile/Max.html" class="btn btn-primary w-100">Meet Max</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Dog 2 -->
+        <div class="col-lg-3 col-md-4 col-sm-6" data-type="dogs" data-age="senior" data-gender="female">
+          <div class="pet-card">
+            <div class="pet-image">
+              <img src="../images/choco1.jpg" alt="Choco">
+              <div class="pet-badge dog">Dog</div>
+            </div>
+            <div class="pet-info">
+              <h3>Choco</h3>
+              <p class="pet-description">Shih Tzu • Male • 3 years</p>
+              <div class="pet-tags">
+                <span class="pet-tag">Calm</span>
+                <span class="pet-tag">Energetic</span>
+                <span class="pet-tag">Trained</span>
+              </div>
+              <a href="../AdoptionProfile/Choco.html" class="btn btn-primary w-100">Meet Choco</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Cat 1 -->
+        <div class="col-lg-3 col-md-4 col-sm-6" data-type="cats" data-age="baby" data-gender="male">
+          <div class="pet-card">
+            <div class="pet-image">
+              <img src="../images/bambi1.png" alt="Bambi">
+              <div class="pet-badge cat">Cat</div>
+            </div>
+            <div class="pet-info">
+              <h3>Bambi</h3>
+              <p class="pet-description">Puspin • Female • 2 years</p>
+              <div class="pet-tags">
+                <span class="pet-tag">Playful</span>
+                <span class="pet-tag">Curious</span>
+                <span class="pet-tag">Adventurous</span>
+              </div>
+              <a href="../AdoptionProfile/Bambi.html" class="btn btn-primary w-100">Meet Bambi</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Cat 2 -->
+        <div class="col-lg-3 col-md-4 col-sm-6" data-type="cats" data-age="adult" data-gender="female">
+          <div class="pet-card">
+            <div class="pet-image">
+              <img src="https://i.pinimg.com/originals/61/cf/ed/61cfed3c0f1c61d8f243a44cf3c059fc.jpg" alt="Luna">
+              <div class="pet-badge cat">Cat</div>
+            </div>
+            <div class="pet-info">
+              <h3>Luna</h3>
+              <p class="pet-description">Siamese • Female • 3 years</p>
+              <div class="pet-tags">
+                <span class="pet-tag">Quiet</span>
+                <span class="pet-tag">Gentle</span>
+                <span class="pet-tag">Independent</span>
+              </div>
+              <a href="../AdoptionProfile/Luna.html" class="btn btn-primary w-100">Meet Luna</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Dog 3 -->
+        <div class="col-lg-3 col-md-4 col-sm-6" data-type="dogs" data-age="baby" data-gender="female">
+          <div class="pet-card">
+            <div class="pet-image">
+              <img src="../images/candy1.png" alt="Candy">
+              <div class="pet-badge dog">Dog</div>
+            </div>
+            <div class="pet-info">
+              <h3>Candy</h3>
+              <p class="pet-description">Shih Tzu • Female • 8 years</p>
+              <div class="pet-tags">
+                <span class="pet-tag">Quiet</span>
+                <span class="pet-tag">Curious</span>
+                <span class="pet-tag">Smart</span>
+              </div>
+              <a href="../AdoptionProfile/Candy.html" class="btn btn-primary w-100">Meet Candy</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dog 4 -->
+        <div class="col-lg-3 col-md-4 col-sm-6" data-type="dogs" data-age="adult" data-gender="male">
+          <div class="pet-card">
+            <div class="pet-image">
+              <img src="../images/towtowprof.jpg" alt="Towtow">
+              <div class="pet-badge dog">Dog</div>
+            </div>
+            <div class="pet-info">
+              <h3>Towtow</h3>
+              <p class="pet-description">Border Collie • Male • 3 years</p>
+              <div class="pet-tags">
+                <span class="pet-tag">Loyal</span>
+                <span class="pet-tag">Intelligent</span>
+                <span class="pet-tag">Protective</span>
+              </div>
+              <a href="../AdoptionProfile/Towtow.html" class="btn btn-primary w-100">Meet Towtow</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Cat 3 -->
+        <div class="col-lg-3 col-md-4 col-sm-6" data-type="cats" data-age="young" data-gender="female">
+          <div class="pet-card">
+            <div class="pet-image">
+              <img src="https://pet-net.net/wp-content/uploads/Nala-Calico-Cat-For-Adoption-in-Walkertown-North-Carolina-768x830.jpg" alt="Chloe">
+              <div class="pet-badge cat">Cat</div>
+            </div>
+            <div class="pet-info">
+              <h3>Chloe</h3>
+              <p class="pet-description">Calico • Female • 1 year</p>
+              <div class="pet-tags">
+                <span class="pet-tag">Playful</span>
+                <span class="pet-tag">Affectionate</span>
+                <span class="pet-tag">Social</span>
+              </div>
+              <a href="" class="btn btn-primary w-100">Meet Chloe</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Cat 4 -->
+        <div class="col-lg-3 col-md-4 col-sm-6" data-type="cats" data-age="adult" data-gender="female">
+          <div class="pet-card">
+            <div class="pet-image">
+              <img src="https://www.petfinder.my/photo/pet/1313/131388-586685-l.jpg" alt="Mia">
+              <div class="pet-badge cat">Cat</div>
+            </div>
+            <div class="pet-info">
+              <h3>Mia</h3>
+              <p class="pet-description">Persian • Female • 5 years</p>
+              <div class="pet-tags">
+                <span class="pet-tag">Calm</span>
+                <span class="pet-tag">Gentle</span>
+                <span class="pet-tag">Affectionate</span>
+              </div>
+              <a href="" class="btn btn-primary w-100">Meet Mia</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Pagination -->
+      <div class="pagination-container mt-5 d-flex justify-content-center">
+        <nav aria-label="Page navigation">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true"><i class="fas fa-angle-left"></i></span>
+              </a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true"><i class="fas fa-angle-right"></i></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- Adoption Process Section -->
+  <section class="adoption-process py-5">
+    <div class="container">
+      <div class="section-heading text-center mb-5">
+        <h2>Our Adoption Process</h2>
+        <div class="green-underline mx-auto"></div>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <div class="process-step">
+            <div class="step-icon">
+              <i class="fas fa-search"></i>
+              <span class="step-number">1</span>
+            </div>
+            <h3>Browse & Choose</h3>
+            <p>Browse our available pets online or visit our shelter to find your perfect match.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <div class="process-step">
+            <div class="step-icon">
+              <i class="fas fa-file-alt"></i>
+              <span class="step-number">2</span>
+            </div>
+            <h3>Apply</h3>
+            <p>Fill out our adoption application form either online or in person at our shelter.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <div class="process-step">
+            <div class="step-icon">
+              <i class="fas fa-handshake"></i>
+              <span class="step-number">3</span>
+            </div>
+            <h3>Meet & Greet</h3>
+            <p>Spend time with your chosen pet to ensure you're a perfect match for each other.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6">
+          <div class="process-step">
+            <div class="step-icon">
+              <i class="fas fa-home"></i>
+              <span class="step-number">4</span>
+            </div>
+            <h3>Welcome Home</h3>
+            <p>Complete the adoption process and welcome your new family member home!</p>
+          </div>
+        </div>
+      </div>
+      
+        <!-- Enhanced Call to Action Section -->
+        <div class="adoption-cta mt-5 py-4 text-center">
+            <h3 class="ready-adopt-heading">Ready to Adopt?</h3>
+            <p class="mb-4">Take the first step towards bringing home your new best friend!</p>
+            <div class="adoption-buttons">
+                <a href="../Adoption Form/form.html" class="btn btn-primary btn-lg ms-2">Start Adoption Application</a>
+                <a href="../FAQsPage/FAQs.html" class="btn btn-outline-success btn-lg ms-2">Learn More About Adoption</a>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section py-5">
+    <div class="container">
+      <div class="cta-container">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <h2>Can't find what you're looking for?</h2>
+            <p>We get new animals every week! Join our waiting list to be notified when pets matching your preferences arrive.</p>
+          </div>
+          <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+            <a href="#" class="btn btn-light">Join Waiting List</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <!-- About Us -->
+        <div class="col-lg-4 col-md-6 footer-section">
+          <h5>About Us</h5>
+          <p>We're dedicated to finding loving forever homes for animals in need. Since 2010, we've helped over 5,000 pets find their families.</p>
+          <div class="social-links mt-3">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div class="col-lg-4 col-md-6 footer-section">
+          <h5>Quick Links</h5>
+          <div class="footer-links">
+            <a href="#"><i class="fas fa-paw pet-icon"></i> Available Pets</a>
+            <a href="#"><i class="fas fa-heart pet-icon"></i> Adoption Process</a>
+            <a href="#"><i class="fas fa-hand-holding-heart pet-icon"></i> Donate</a>
+            <a href="#"><i class="fas fa-user-friends pet-icon"></i> Volunteer</a>
+            <a href="#"><i class="fas fa-question-circle pet-icon"></i> FAQ</a>
+          </div>
+        </div>
+        
+        <!-- Newsletter -->
+        <div class="col-lg-4 col-md-6 footer-section">
+          <h5>Newsletter</h5>
+          <p>Subscribe to get updates on new arrivals and adoption events.</p>
+          <form class="subscribe-form d-flex mt-3">
+            <input type="email" class="form-control" placeholder="Your Email">
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      
+      <!-- Paw Print Divider -->
+      <div class="pet-paw-divider">
+        <div class="paw-line"></div>
+        <i class="fas fa-paw fa-2x paw-icon"></i>
+        <div class="paw-line"></div>
+      </div>
+      
+      <!-- Support Section -->
+      <div class="row text-center">
+        <div class="col-md-4 mb-3">
+          <h6><i class="fas fa-heart me-2"></i> Emergency Support</h6>
+          <p class="small">24/7 Animal Emergency: (123) 555-7890</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6><i class="fas fa-hands-helping me-2"></i> Foster Program</h6>
+          <p class="small">Open your home temporarily: tails@petadoption.org</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6><i class="fas fa-truck me-2"></i> Transport Volunteers</h6>
+          <p class="small">Help animals reach forever homes: transport@petadoption.org</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Copyright -->
+    <div class="footer-bottom text-center">
+      <div class="container">
+        <p class="mb-0">© 2025 All rights reserved. | <a href="#" class="text-white">Privacy Policy</a> | <a href="#" class="text-white">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+  <!-- Filter JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const petsGrid = document.getElementById('petsGrid');
+      const petCards = document.querySelectorAll('#petsGrid > div');
+      const animalTypeFilter = document.getElementById('animalTypeFilter');
+      const ageFilter = document.getElementById('ageFilter');
+      const genderFilter = document.getElementById('genderFilter');
+      const searchInput = document.getElementById('searchInput');
+      const searchButton = document.getElementById('searchButton');
+      
+      function filterPets() {
+        const animalType = animalTypeFilter.value;
+        const age = ageFilter.value;
+        const gender = genderFilter.value;
+        const searchTerm = searchInput.value.toLowerCase();
+        
+        petCards.forEach(card => {
+          const cardType = card.getAttribute('data-type');
+          const cardAge = card.getAttribute('data-age');
+          const cardGender = card.getAttribute('data-gender');
+          const petName = card.querySelector('h3').textContent.toLowerCase();
+          const petDescription = card.querySelector('.pet-description').textContent.toLowerCase();
+          
+          const typeMatch = animalType === 'all' || cardType === animalType;
+          const ageMatch = age === 'all' || cardAge === age;
+          const genderMatch = gender === 'all' || cardGender === gender;
+          const searchMatch = searchTerm === '' || 
+                             petName.includes(searchTerm) || 
+                             petDescription.includes(searchTerm);
+          
+          if (typeMatch && ageMatch && genderMatch && searchMatch) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+      
+      animalTypeFilter.addEventListener('change', filterPets);
+      ageFilter.addEventListener('change', filterPets);
+      genderFilter.addEventListener('change', filterPets);
+      searchButton.addEventListener('click', filterPets);
+      searchInput.addEventListener('keyup', function(event) {
+        if (event.key === 'Enter') {
+          filterPets();
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

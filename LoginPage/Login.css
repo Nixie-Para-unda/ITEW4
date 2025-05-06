@@ -1,0 +1,198 @@
+:root {
+    --primary-color: #008800;
+    --primary-light: #4CAF50;
+    --primary-dark: #006600;
+    --white: #ffffff;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 1200px;
+    height: 650px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.auth-image {
+    background-image: url('../images/TAILSLogin.png');
+    background-position: center;
+    height: 100%;
+}
+
+.auth-forms-container {
+    height: 650px;
+    position: relative;
+    overflow: hidden;
+}
+
+.auth-content {
+    padding: 25px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.auth-tabs {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee;
+}
+
+.auth-tab-btn {
+    background: none;
+    border: none;
+    padding: 8px 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #888;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.auth-tab-btn.active {
+    color: var(--primary-color);
+}
+
+.auth-tab-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.auth-form {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    top: 95px;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease;
+    transform: translateX(50px);
+    pointer-events: none;
+    padding: 0 30px;
+}
+
+.auth-form.active {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: all;
+    position: relative;
+    top: 0;
+    padding: 0;
+}
+
+.form-control:focus {
+    border-color: var(--primary-light);
+    box-shadow: 0 0 0 0.25rem rgba(0, 136, 0, 0.25);
+}
+
+.form-label {
+    font-weight: 500;
+    color: #555;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.logo img {
+    max-width: 120px;
+}
+
+.logo-text {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-top: 5px;
+}
+
+.paw-icon {
+    font-size: 26px;
+    color: var(--primary-color);
+}
+
+.form-text {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #777;
+}
+
+.password-field-container {
+    position: relative;
+}
+
+.forgot-password {
+    color: var(--primary-color);
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+    color: var(--primary-dark);
+}
+
+@media (max-width: 767px) {
+    .auth-image {
+        height: 200px;
+    }
+    
+    .auth-forms-container {
+        height: auto;
+        min-height: 500px;
+    }
+    
+    .auth-content {
+        padding: 20px 15px;
+    }
+    
+    .auth-form {
+        top: 85px;
+        padding: 0 15px;
+    }
+}
