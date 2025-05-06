@@ -26,29 +26,29 @@
     line-height: 1.6;
   }
   
-  /* Header Styles */
-    header.header {
-        background-color: #fff;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
+/* Header Styles */
+header.header {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 
 header .logo img {
-    max-width: 80px;
-    height: auto;
-    margin-top: -10px;
-    margin-bottom: -10px;
+  max-width: 80px;
+  height: auto;
+  margin-top: -10px;
+  margin-bottom: -10px;
 }
 
 .login-button {
-    padding: 0.6rem 2.1rem;
-    background-color: #fdd535;
-    border: none;
-    color: #312c2c;
-    font-weight: 600;
-    border-radius: 30px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  padding: 0.6rem 2.1rem;
+  background-color: #fdd535;
+  border: none;
+  color: #312c2c;
+  font-weight: 600;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .login-button:hover {
@@ -61,77 +61,77 @@ header .logo img {
 
 /* Navigation Styles */
 .nav-menu {
-    background-color: #008800;
-    padding: 0;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  background-color: #008800;
+  padding: 0;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
 }
 
 .nav-menu .navbar-nav {
-    padding: 0;
+  padding: 0;
 }
 
 .nav-menu .nav-link {
-    color: white !important;
-    padding: 0.9rem 1.5rem;
-    font-weight: 500;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    position: relative;
-    transition: all 0.2s ease;
-    border-bottom: 3px solid transparent;
+  color: white !important;
+  padding: 0.9rem 1.5rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  position: relative;
+  transition: all 0.2s ease;
+  border-bottom: 3px solid transparent;
 }
 
 .nav-menu .nav-link:hover,
 .nav-menu .nav-link:focus {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
-    border-bottom: 3px solid rgba(255, 255, 255, 0.7);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  border-bottom: 3px solid rgba(255, 255, 255, 0.7);
 }
 
 .nav-menu .nav-link.active {
-    border-bottom: 3px solid #ffcc00;
-    background-color: rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #ffcc00;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .dropdown-menu {
-    background-color: #007700;
-    border: none;
-    border-radius: 0 0 8px 8px;
-    margin-top: 0;
-    padding: 0.5rem 0;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  background-color: #007700;
+  border: none;
+  border-radius: 0 0 8px 8px;
+  margin-top: 0;
+  padding: 0.5rem 0;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .dropdown-item {
-    color: white;
-    padding: 0.75rem 1.5rem;
-    font-size: 0.9rem;
-    transition: all 0.2s ease;
-    border-left: 3px solid transparent;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  border-left: 3px solid transparent;
 }
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-    background-color: rgba(0, 0, 0, 0.1);
-    color: white;
-    border-left: 3px solid rgba(255, 255, 255, 0.7);
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  border-left: 3px solid rgba(255, 255, 255, 0.7);
 }
 
 /* Mobile navbar toggler styling */
 .navbar-toggler {
-    border: none;
-    background-color: rgba(255, 255, 255, 0.15);
-    padding: 0.5rem 0.75rem;
-    margin: 0.5rem;
-    border-radius: 4px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 0.5rem 0.75rem;
+  margin: 0.5rem;
+  border-radius: 4px;
 }
 
 .navbar-toggler:focus {
-    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
   
   /* Hero Section */

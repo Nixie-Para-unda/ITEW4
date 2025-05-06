@@ -92,3 +92,37 @@ cards.forEach(card => {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Animate stat numbers when they come into view
+    const statNumbers = document.querySelectorAll('.stat-number');
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounter(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {threshold: 0.1});
+    
+    statNumbers.forEach(number => {
+      observer.observe(number);
+    });
+    
+    function animateCounter(element) {
+      const target = parseInt(element.getAttribute('data-count'));
+      const duration = 2000; // ms
+      const step = target / (duration / 16);
+      let current = 0;
+      
+      const timer = setInterval(() => {
+        current += step;
+        if (current >= target) {
+          element.textContent = target;
+          clearInterval(timer);
+        } else {
+          element.textContent = Math.round(current);
+        }
+      }, 16);
+    }
+  });
