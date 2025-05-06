@@ -3,24 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TAILS - Stats Section</title>
+  <title>TAILS - Animal Shelter</title>
   <link rel="stylesheet" href="contributors.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="header py-4">
+   <!-- Header -->
+   <header class="header py-4">
     <div class="container">
       <div class="row align-items-center justify-content-between">
+        <!-- Logo -->
         <div class="col-md-3">
           <div class="logo">
-            <img src="logo.png" alt="Company Logo" class="img-fluid" />
+              <img src="" alt="Company Logo" class="img-fluid">
           </div>
         </div>
+
+        <!-- Login Button -->
         <div class="col-md-3 text-end">
-          <button class="login-button">Login</button>
+          <a href="../LoginPage/Login.html">
+            <button class="login-button">Login</button>
+          </a>
         </div>
       </div>
     </div>
@@ -29,245 +35,278 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg nav-menu">
     <div class="container">
-      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav w-100 justify-content-between">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">OUR STORY</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="../OurStory/./know-about-us/know-about-us.html">Know About Us</a></li>
-              <li><a class="dropdown-item" href="../OurStory/./awards/awardsNrecog.html">Awards & Recognitions</a></li>
-              <li><a class="dropdown-item" href="../OurStory/./contributors/contributors.html">Contributors</a></li>
-            </ul>
+          
+          <!-- Home -->
+          <li class="nav-item">
+              <a class="nav-link" href="../LandingPage/Home.html">Home</a>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#">EVENTS</a></li>
+
+          <!-- OurStory -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">GET INVOLVED</a>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                Our Story
+            </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Volunteer</a></li>
-              <li><a class="dropdown-item" href="#">Donate</a></li>
+              <li><a class="dropdown-item" href="#">Awards and Recognition</a></li>
               <li><a class="dropdown-item" href="#">Partnerships</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#">BOOK A VISIT</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">FAQS</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">CONTACT US</a></li>
+
+          <!-- Events -->
+          <li class="nav-item">
+            <a class="nav-link" href="../Events-Page/event.html">Events</a>
+          </li>
+
+          <!-- Get Involved -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+              Get Involved
+            </a>
+
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Volunteer</a></li>
+                <li><a class="dropdown-item" href="#">Donate</a></li>
+                <li><a class="dropdown-item" href="#">Partnerships</a></li>
+            </ul>
+          </li>
+
+          <!-- Book a Visit -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Book a Visit</a>
+          </li>
+
+          <!-- FAQs -->
+          <li class="nav-item">
+            <a class="nav-link" href="../FAQsPage/FAQs.html">FAQs</a>
+          </li>
+
+          <!-- Contact Us -->
+          <li class="nav-item">
+            <a class="nav-link" href="../contact-us/ContactUs.html">Contact Us</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="container text-center">
-            <h1 class="display-4 fw-bold text-white">Be part of the change.</h1>
-            <p class="lead text-white">Your contributions big or small help provide food, shelter, and medical care for rescued animals.</p>
-            <a href="#" class="btn btn-light btn-lg mt-3">Join Us</a>
-        </div>
-    </section>
-
-    <!-- Why Volunteer Section -->
-    <section class="why-volunteer py-5">
-        <div class="container">
-            <h2 class="text-center section-title mb-5">Our Impact</h2>
-        </div>
-    </section>
-
-    <div class="stat-card">
-      <div class="stat-info">
-        <h3>Donors</h3>
-        <p>
-          Generous donors provide essential supplies and funding to help dogs and cats in need of
-          <span class="line-gap">homes.</span>
-        </p>
-      </div>
-      <div class="stat-number">250</div>
+  <section class="hero-section">
+    <div class="overlay"></div>
+    <div class="container text-center position-relative">
+      <h1 class="fw-bold mb-4">Be part of the change.</h1>
+      <p class="lead mb-4">Your contributions big or small help provide food, shelter, and medical care for rescued animals.</p>
+      <a href="#" class="btn primary-btn btn-lg">
+        Join Us
+        <i class="fas fa-arrow-right ms-2"></i>
+      </a>
     </div>
+  </section>
 
-    <div class="stat-card">
-      <div class="stat-info">
-        <h3>Donors</h3>
-        <p>
-          Generous donors provide essential supplies and funding to help dogs and cats in need of
-          <span class="line-gap">homes.</span>
-        </p>
-      </div>
-      <div class="stat-number">250</div>
-    </div>
-
-    <div class="stat-card">
-      <div class="stat-info">
-        <h3>Adopters</h3>
-        <p>
-          Families and individuals who have given our animals a second chance at a happy life
-          <br><span class="line-gap">through adoption.</span>
-        </p>
-      </div>
-      <div class="stat-number">200</div>
-    </div>
-  </main>
-  <br>
-
-  <!-- Events Section -->
-  <div class="events-section">
-    <h2 class="section-title">Upcoming Events</h2>
-    
-    <div class="events-grid">
-        <!-- Event Card 1 -->
-        <div class="event-card">
-            <div class="event-content">
-                <div class="event-date-box">
-                    <div class="event-month">MAR</div>
-                    <div class="event-day">1</div>
-                </div>
-                <div class="event-info">
-                    <div>
-                        <h3>Donors</h3>
-                          <p>
-                            Generous donors provide essential supplies and funding to help dogs and cats in need of
-                            <span class="line-gap">homes.</span>
-                          </p>
-                        </div>
-                        <div class="stat-number">250</div>
-                </div>
-        
-        <!-- Event Card 2 -->
-        <div class="event-card">
-            <div class="event-content">
-                <div class="event-date-box">
-                    <div class="event-month">MAR</div>
-                    <div class="event-day">15</div>
-                </div>
-                <div class="event-info">
-                    <div>
-                        <h3 class="event-name">Pet Health Awareness Workshop</h3>
-                        <p class="event-desc">Learn essential tips for keeping your pets healthy from our veterinarians.</p>
-                    </div>
-                    <div class="event-action">
-                        <button class="details-button" onclick="openModal('event2')">Details</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Event Card 3 -->
-        <div class="event-card">
-            <div class="event-content">
-                <div class="event-date-box">
-                    <div class="event-month">APR</div>
-                    <div class="event-day">5</div>
-                </div>
-                <div class="event-info">
-                    <div>
-                        <h3 class="event-name">Volunteer Orientation Day</h3>
-                        <p class="event-desc">Join our team of dedicated volunteers and make a difference in animal lives.</p>
-                    </div>
-                    <div class="event-action">
-                        <button class="details-button" onclick="openModal('event3')">Details</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Event Card 4 -->
-        <div class="event-card">
-            <div class="event-content">
-                <div class="event-date-box">
-                    <div class="event-month">APR</div>
-                    <div class="event-day">20</div>
-                </div>
-                <div class="event-info">
-                    <div>
-                        <h3 class="event-name">Fundraising Gala: Hearts for Paws</h3>
-                        <p class="event-desc">An elegant evening supporting our shelter's medical treatment fund.</p>
-                    </div>
-                    <div class="event-action">
-                        <button class="details-button" onclick="openModal('event4')">Details</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <button class="view-all-btn">View All Events</button>
-</div>
-
-    
-    <!-- Footer -->
-   <footer class="footer">
+  <!-- Impact Stats Section -->
+  <section class="stats-section">
     <div class="container">
-        <div class="row">
-            <!-- About Us -->
-            <div class="col-lg-4 col-md-6 footer-section">
-                <h5>About Us</h5>
-                <p>We're dedicated to finding loving forever homes for animals in need. Since 2010, we've helped over 5,000 pets find their families.</p>
-                <div class="social-links mt-3">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                </div>
+      <div class="section-header text-center mb-5">
+        <span class="section-badge">Making A Difference</span>
+        <h2 class="section-title">Our Impact</h2>
+        <div class="title-underline"></div>
+      </div>
+      
+      <div class="stats-container">
+        <!-- Donors Stat Card -->
+        <div class="stat-card">
+          <div class="stat-info">
+            <div class="stat-icon">
+              <i class="fas fa-hand-holding-heart"></i>
             </div>
+            <div class="stat-text">
+              <h3>Donors</h3>
+              <p>
+                Generous donors provide essential supplies and funding to help dogs and cats in need of homes.
+              </p>
+            </div>
+          </div>
+          <div class="stat-number-container">
+            <div class="stat-number" data-count="250">0</div>
+            <span class="stat-plus">+</span>
+          </div>
+        </div>
+
+        <!-- Volunteers Stat Card -->
+        <div class="stat-card">
+          <div class="stat-info">
+            <div class="stat-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="stat-text">
+              <h3>Volunteers</h3>
+              <p>
+                Dedicated individuals who give their time and hearts to care for animals awaiting their forever homes.
+              </p>
+            </div>
+          </div>
+          <div class="stat-number-container">
+            <div class="stat-number" data-count="175">0</div>
+            <span class="stat-plus">+</span>
+          </div>
+        </div>
+
+        <!-- Adopters Stat Card -->
+        <div class="stat-card">
+          <div class="stat-info">
+            <div class="stat-icon">
+              <i class="fas fa-home"></i>
+            </div>
+            <div class="stat-text">
+              <h3>Adopters</h3>
+              <p>
+                Families and individuals who have given our animals a second chance at a happy life through adoption.
+              </p>
+            </div>
+          </div>
+          <div class="stat-number-container">
+            <div class="stat-number" data-count="200">0</div>
+            <span class="stat-plus">+</span>
+          </div>
+        </div>
+
+        <!-- Animals Rescued Stat Card -->
+        <div class="stat-card">
+          <div class="stat-info">
+            <div class="stat-icon">
+              <i class="fas fa-paw"></i>
+            </div>
+            <div class="stat-text">
+              <h3>Animals Rescued</h3>
+              <p>
+                Cats, dogs, and other animals rescued from difficult situations and given a fresh start.
+              </p>
+            </div>
+          </div>
+          <div class="stat-number-container">
+            <div class="stat-number" data-count="520">0</div>
+            <span class="stat-plus">+</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <!-- About Us -->
+        <div class="col-lg-4 col-md-6 footer-section">
+          <h5>About TAILS</h5>
+          <p>We're dedicated to finding loving forever homes for animals in need. Since 2010, we've helped over 5,000 pets find their families.</p>
+          <div class="social-links mt-3">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
             
-            <!-- Quick Links -->
-            <div class="col-lg-4 col-md-6 footer-section">
-                <h5>Quick Links</h5>
-                <div class="footer-links">
-                    <a href="#"><i class="fas fa-paw pet-icon"></i> Available Pets</a>
-                    <a href="#"><i class="fas fa-heart pet-icon"></i> Adoption Process</a>
-                    <a href="#"><i class="fas fa-hand-holding-heart pet-icon"></i> Donate</a>
-                    <a href="#"><i class="fas fa-user-friends pet-icon"></i> Volunteer</a>
-                    <a href="#"><i class="fas fa-question-circle pet-icon"></i> FAQ</a>
-                </div>
-            </div>
+        <!-- Quick Links -->
+        <div class="col-lg-4 col-md-6 footer-section">
+          <h5>Quick Links</h5>
+          <div class="footer-links">
+            <a href="#"><i class="fas fa-paw pet-icon"></i> Available Pets</a>
+            <a href="#"><i class="fas fa-heart pet-icon"></i> Adoption Process</a>
+            <a href="#"><i class="fas fa-hand-holding-heart pet-icon"></i> Donate</a>
+            <a href="#"><i class="fas fa-user-friends pet-icon"></i> Volunteer</a>
+            <a href="#"><i class="fas fa-question-circle pet-icon"></i> FAQ</a>
+          </div>
+        </div>
             
-            <!-- Newsletter -->
-            <div class="col-lg-4 col-md-6 footer-section">
-                <h5>Newsletter</h5>
-                <p>Subscribe to get updates on new arrivals and adoption events.</p>
-                <form class="subscribe-form d-flex mt-3">
-                    <input type="email" class="form-control" placeholder="Your Email">
-                    <button type="submit" class="btn btn-primary">
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
-                </form>
-            </div>
+        <!-- Newsletter -->
+        <div class="col-lg-4 col-md-6 footer-section">
+          <h5>Newsletter</h5>
+          <p>Subscribe to get updates on new arrivals and adoption events.</p>
+          <form class="subscribe-form d-flex mt-3">
+            <input type="email" class="form-control" placeholder="Your Email">
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
         </div>
+      </div>
         
-        <!-- Paw Print Divider -->
-        <div class="pet-paw-divider">
-            <div class="paw-line"></div>
-            <i class="fas fa-paw fa-2x paw-icon"></i>
-            <div class="paw-line"></div>
-        </div>
+      <!-- Paw Print Divider -->
+      <div class="pet-paw-divider">
+        <div class="paw-line"></div>
+        <i class="fas fa-paw fa-2x paw-icon"></i>
+        <div class="paw-line"></div>
+      </div>
         
-        <!-- Support Section -->
-        <div class="row text-center">
-            <div class="col-md-4 mb-3">
-                <h6><i class="fas fa-heart me-2"></i> Emergency Support</h6>
-                <p class="small">24/7 Animal Emergency: (123) 555-7890</p>
-            </div>
-            <div class="col-md-4 mb-3">
-                <h6><i class="fas fa-hands-helping me-2"></i> Foster Program</h6>
-                <p class="small">Open your home temporarily: tails@petadoption.org</p>
-            </div>
-            <div class="col-md-4 mb-3">
-                <h6><i class="fas fa-truck me-2"></i> Transport Volunteers</h6>
-                <p class="small">Help animals reach forever homes: transport@petadoption.org</p>
-            </div>
+      <!-- Support Section -->
+      <div class="row text-center">
+        <div class="col-md-4 mb-3">
+          <h6><i class="fas fa-heart me-2"></i> Emergency Support</h6>
+          <p class="small">24/7 Animal Emergency: (123) 555-7890</p>
         </div>
+        <div class="col-md-4 mb-3">
+          <h6><i class="fas fa-hands-helping me-2"></i> Foster Program</h6>
+          <p class="small">Open your home temporarily: tails@petadoption.org</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6><i class="fas fa-truck me-2"></i> Transport Volunteers</h6>
+          <p class="small">Help animals reach forever homes: transport@petadoption.org</p>
+        </div>
+      </div>
     </div>
     
     <!-- Copyright -->
     <div class="footer-bottom text-center">
-        <div class="container">
-            <p class="mb-0">© 2025 All rights reserved. | <a href="#" class="text-white">Privacy Policy</a> | <a href="#" class="text-white">Terms of Service</a></p>
-        </div>
+      <div class="container">
+        <p class="mb-0">© 2025 TAILS. All rights reserved. | <a href="#" class="text-white">Privacy Policy</a> | <a href="#" class="text-white">Terms of Service</a></p>
+      </div>
     </div>
-</footer>
+  </footer>
 
-
+  <!-- JavaScript for counter animation -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Animate stat numbers when they come into view
+      const statNumbers = document.querySelectorAll('.stat-number');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animateCounter(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {threshold: 0.1});
+      
+      statNumbers.forEach(number => {
+        observer.observe(number);
+      });
+      
+      function animateCounter(element) {
+        const target = parseInt(element.getAttribute('data-count'));
+        const duration = 2000; // ms
+        const step = target / (duration / 16);
+        let current = 0;
+        
+        const timer = setInterval(() => {
+          current += step;
+          if (current >= target) {
+            element.textContent = target;
+            clearInterval(timer);
+          } else {
+            element.textContent = Math.round(current);
+          }
+        }, 16);
+      }
+    });
+  </script>
 </body>
 </html>
