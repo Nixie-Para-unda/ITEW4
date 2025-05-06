@@ -11,7 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -23,15 +23,15 @@ body {
 
 /* Header Styles */
 header.header {
-    padding: 1rem 0;
-    background-color: #ffffff;
+    background-color: #fff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
 }
 
 header .logo img {
-    max-width: 150px;
+    max-width: 80px;
     height: auto;
+    margin-top: -10px;
+    margin-bottom: -10px;
 }
 
 .login-button {
