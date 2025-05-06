@@ -214,13 +214,14 @@ header .logo img {
     width: 100%;
 }
 
+/* Donation Section */
 .impact-section {
     margin-bottom: 40px;
 }
 
 .section-title {
     font-size: 24px;
-    color: #008800;
+    color: var(--primary-color);
     margin-bottom: 20px;
     position: relative;
     padding-bottom: 12px;
@@ -233,7 +234,7 @@ header .logo img {
     left: 0;
     width: 60px;
     height: 3px;
-    background-color: #008800;
+    background-color: var(--primary-color);
 }
 
 .impact-cards {
@@ -271,7 +272,7 @@ header .logo img {
 
 .impact-icon {
     font-size: 36px;
-    color: #1a8754;
+    color: var(--primary-dark);
     margin-bottom: 15px;
 }
 
@@ -288,8 +289,8 @@ header .logo img {
 }
 
 .testimonial {
-    background-color: #f8f9fa;
-    border-left: 4px solid #1a8754;
+    background-color: var(--light-gray);
+    border-left: 4px solid var(--primary-dark);
     padding: 20px 25px;
     margin-bottom: 30px;
     border-radius: 0 8px 8px 0;
@@ -376,8 +377,8 @@ header .logo img {
 
 .amount-option input[type="radio"]:checked + label {
     background-color: #e8f5e9;
-    border-color: #1a8754;
-    color: #1a8754;
+    border-color: var(--primary-dark);
+    color: var(--primary-dark);
 }
 
 .custom-amount {
@@ -414,7 +415,7 @@ header .logo img {
 }
 
 .custom-amount input:focus {
-    border-color: #1a8754;
+    border-color: var(--primary-dark);
     outline: none;
     box-shadow: 0 0 0 3px rgba(26, 135, 84, 0.2);
 }
@@ -466,7 +467,7 @@ header .logo img {
 }
 
 .toggle-option input[type="radio"]:checked + label {
-    background-color: #1a8754;
+    background-color: var(--primary-dark);
     color: white;
 }
 
@@ -491,7 +492,7 @@ header .logo img {
 }
 
 .form-control:focus {
-    border-color: #1a8754;
+    border-color: var(--primary-dark);
     outline: none;
     box-shadow: 0 0 0 3px rgba(26, 135, 84, 0.2);
 }
@@ -516,7 +517,7 @@ header .logo img {
 .donate-button {
     display: block;
     width: 100%;
-    background: linear-gradient(135deg, #1a8754, #25b774);
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-light));
     color: white;
     border: none;
     padding: 14px;
@@ -529,7 +530,7 @@ header .logo img {
 }
 
 .donate-button:hover {
-    background: linear-gradient(135deg, #146c43, #1a8754);
+    background: linear-gradient(135deg, #146c43, var(--primary-dark));
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(26, 135, 84, 0.3);
 }
@@ -545,7 +546,7 @@ header .logo img {
 
 .security-icon {
     margin-right: 8px;
-    color: #1a8754;
+    color: var(--primary-dark);
 }
 
 .payment-methods {
@@ -578,7 +579,7 @@ header .logo img {
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
-    background-color: #f8f9fa;
+    background-color: var(--light-gray);
     border-radius: 10px;
     padding: 20px;
 }
@@ -599,7 +600,7 @@ header .logo img {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #1a8754;
+    color: var(--primary-dark);
     font-size: 24px;
     margin-bottom: 15px;
 }
