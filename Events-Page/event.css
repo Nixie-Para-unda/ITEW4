@@ -51,12 +51,13 @@ margin-bottom: -10px;
     padding: 0;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
     width: 100%;
+    position: relative;
 }
 
 .nav-menu .navbar-nav {
     padding: 0;
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    flex-wrap: wrap;
 }
 
 .nav-menu .nav-link {
@@ -69,7 +70,7 @@ margin-bottom: -10px;
     position: relative;
     transition: all 0.2s ease;
     border-bottom: 3px solid transparent;
-    white-space: nowrap; /* Prevent text from wrapping */
+    white-space: nowrap;
 }
 
 .nav-menu .nav-link:hover,
@@ -83,6 +84,7 @@ margin-bottom: -10px;
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+/* Dropdown Menu Styles */
 .dropdown-menu {
     background-color: #007700;
     border: none;
@@ -90,8 +92,9 @@ margin-bottom: -10px;
     margin-top: 0;
     padding: 0.5rem 0;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 250px;
+    min-width: 200px;
+    position: absolute;
+    z-index: 1000;
 }
 
 .dropdown-item {
@@ -100,6 +103,7 @@ margin-bottom: -10px;
     font-size: 0.9rem;
     transition: all 0.2s ease;
     border-left: 3px solid transparent;
+    white-space: nowrap;
 }
 
 .dropdown-item:hover,
@@ -107,6 +111,15 @@ margin-bottom: -10px;
     background-color: rgba(0, 0, 0, 0.1);
     color: white;
     border-left: 3px solid rgba(255, 255, 255, 0.7);
+}
+
+/* Add these new styles for better dropdown positioning */
+.nav-item.dropdown {
+    position: relative;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
 }
 
 /* Mobile navbar toggler styling */
@@ -717,26 +730,24 @@ margin-bottom: -10px;
 
 @media (max-width: 991px) {
     .nav-menu {
-        border-radius: 0;
+        padding: 0.5rem 0;
     }
     
     .nav-menu .nav-link {
-        padding: 0.7rem 1.2rem;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        text-align: left;
-        width: 100%;
+        padding: 0.75rem 1rem;
     }
     
     .dropdown-menu {
-        background-color: rgba(0, 0, 0, 0.1);
-        box-shadow: none;
-        border-radius: 0;
+        position: static;
         width: 100%;
-        max-width: none;
+        min-width: auto;
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 0;
+        box-shadow: none;
     }
     
     .dropdown-item {
-        padding-left: 2rem;
+        padding: 0.5rem 2rem;
     }
     
     .content-title {
